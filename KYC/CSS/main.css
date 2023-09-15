@@ -1,0 +1,120 @@
+/* 메인박스 */
+.main {
+  height: 1000px;
+  padding: 0 0 250px;
+}
+
+/* 메인 상단 인박스 */
+.main-header-ibx {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-bottom: 6px solid #eee;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* 메인 상단 컨테이너 박스 */
+.main-containerBx {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.link-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 28px;
+  font-size: 14px;
+  color: #888;
+  font-family: KakaoBig Bold;
+}
+
+.main-containerBx .on .link-tab {
+  position: relative;
+  z-index: 1;
+  color: #202020;
+}
+
+.txt_tab {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main-containerBx li+li {
+  position: relative;
+}
+
+.main-containerBx li+li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 12px;
+  margin-top: -6px;
+  background-color: #e5e5e5;
+}
+
+/* 메인 내용박스 */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  max-width: 700px;
+  margin: 0px auto;
+  /* padding: 0px 1rem; */
+}
+
+/* 메인 인박스 */
+.main-content-ibx {
+  flex: 1 1 auto;
+  min-width: 0px;
+}
+
+/* 제목박스 */
+.title-box {
+  margin-bottom: 8px;
+}
+
+.title-form {
+  position: relative;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.search-bx {
+  padding: 0px 3.875rem 0px 1.0625rem;
+  width: inherit;
+  height: inherit;
+  background-color: rgb(255, 255, 255);
+  border: 0.0625rem solid rgb(215, 226, 235);
+  border-radius: 0.25rem;
+  appearance: none;
+}
+
+.search-img-bx {
+  position: absolute;
+  top: 0px;
+  right: 1.0625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 100%;
+  line-height: 0;
+}
+
+.search-img-btn {
+  line-height: inherit;
+}
+
+/* 검색모양 이미지 */
+.kudRiF svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
