@@ -482,7 +482,9 @@ label {
     text-align: center;
 }
 .main1_article1 .div1 .div2 .form1 .d4 .bt1{
-    background-color: #fee500;
+    /*background-color: #fee500;*/
+    background-color: #191919;
+
     font-style: normal;
     font-weight: 400;
     display: block;
@@ -492,8 +494,10 @@ label {
     /*font-weight: 400;*/
     font-size: 16px;
     line-height: 51px;
-    color: #191919;
+    /*color: #191919;*/
+    color: #FFFFFF;
 }
+
 .main1_article1 .div1 .div2 .form1 .d4 .sp1{
     position: relative;
     display: block;
