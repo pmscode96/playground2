@@ -148,8 +148,8 @@ h4 {
 
 @media only screen and (min-width: 768px)
 .header {
-     height: 70px;
- }
+    height: 70px;
+}
 
 .header::before {
     content: "";
@@ -166,7 +166,7 @@ h4 {
     display: flex;
     justify-content: space-between;
 
-   /*text-align: center;*/
+    /*text-align: center;*/
 
     /*align-items: stretch;*/
 
@@ -184,35 +184,35 @@ h4 {
 }
 
 @media only screen and (min-width: 768px)
- .header_div1 {
-     align-items: center;
-     width: 1120px;
-     height: 100%;
-     margin: 0px auto;
- }
+.header_div1 {
+    align-items: center;
+    width: 1120px;
+    height: 100%;
+    margin: 0px auto;
+}
 
- .header_div1_h1{
-     width: 115px;
-     height: 70px;
- }
+.header_div1_h1{
+    width: 115px;
+    height: 70px;
+}
 
 @media only screen and (min-width: 768px)
- .header_div1_h1 {
-     height: 70px;
- }
+.header_div1_h1 {
+    height: 70px;
+}
 
- .header_div1_h1 a{
-     display: block;
-     /*width: 103px;*/
-     height: 100%;
-     background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center center / contain no-repeat;
- }
+.header_div1_h1 a{
+    display: block;
+    /*width: 103px;*/
+    height: 100%;
+    background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center center / contain no-repeat;
+}
 
 @media only screen and (min-width: 768px)
 .header_div1_h1 a {
-     width: 115px;
-     background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
- }
+    width: 115px;
+    background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
+}
 
 .header_div1_h1 a span{
     overflow: visible;
@@ -235,10 +235,10 @@ h4 {
 
 @media only screen and (min-width: 768px)
 .header_div1_nav {
-     justify-content: center;
-     flex: 1 0 auto;
-     height: 100%;
- }
+    justify-content: center;
+    flex: 1 0 auto;
+    height: 100%;
+}
 
 .header_div1_nav h2{
     overflow: hidden;
@@ -285,8 +285,8 @@ h4 {
 
 @media only screen and (min-width: 768px)
 .header_div1_nav ul li {
-     margin: 0px 11px;
- }
+    margin: 0px 11px;
+}
 
 .header_div1_nav a{
     display: inline-flex;
@@ -319,15 +319,15 @@ h4 {
     font-family: "KakaoBig Bold";
     font-size: 16px;
     color: rgb(68, 68, 68);
- }
+}
 
 @media only screen and (min-width: 768px)
 .header_div1_nav ul li a {
-     padding: 0px 14px;
-     font-family: "KakaoBig Bold";
-     font-size: 16px;
-     color: rgb(68, 68, 68);
- }
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
 
 .header_div1_1{
     position: relative;
@@ -389,10 +389,10 @@ h4 {
 
 @media only screen and (min-width: 768px)
 .header_div1_a {
-     height: auto;
-     margin: 0px 11px 0px 19px;
-     padding: 8px;
- }
+    height: auto;
+    margin: 0px 11px 0px 19px;
+    padding: 8px;
+}
 
 .header_div1_a div{
 
@@ -408,9 +408,9 @@ h4 {
 
 @media only screen and (min-width: 768px)
 .header_div1_a svg {
-     width: 22px;
-     height: 22px;
- }
+    width: 22px;
+    height: 22px;
+}
 
 .header_div1_a svg g{
     fill: rgb(32, 32, 32);
@@ -819,6 +819,152 @@ h4 {
     /*padding: 0px 16px;*/
     font-size: 13px;
 }
+
+
+
+
+
+
+
+
+.ex{
+    /*margin-left: 850px;*/
+    width: 115%;
+
+}
+
+
+.extra{
+    display: none;
+
+    height: 50px;
+
+}
+
+.extra_nav{
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+
+    justify-content: space-between;
+
+}
+
+@media only screen and (min-width: 768px)
+.extra_nav {
+    justify-content: center;
+    flex: 1 0 auto;
+    height: 100%;
+}
+
+.extra_nav h2{
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    color: transparent;
+}
+
+.extra_nav ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /*margin: 0px;*/
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    list-style: none;
+
+
+    /*margin-block-start: 1em;*/
+    /*margin-block-end: 1em;*/
+    /*margin-inline-start: 0px;*/
+    /*margin-inline-end: 0px;*/
+    /*padding-inline-start: 40px;*/
+}
+.extra_nav ul li{
+    height: 100%;
+    /*border-bottom: 2px solid rgb(57, 57, 57);*/
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+
+    display: list-item;
+
+    position: relative;
+
+    /*font-size: 13px;*/
+    line-height: 1.54;
+    letter-spacing: -0.1px;
+
+
+    margin: 0px 11px;
+
+}
+
+
+@media only screen and (min-width: 768px)
+.extra_nav ul li {
+    margin: 0px 11px;
+}
+
+.extra_nav a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    /*padding: 5px 4px 9px;*/
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+
+
+    color: rgb(32, 32, 32);
+
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    /*color: rgb(68, 68, 68);*/
+    color: #a0a0a0;
+}
+
+@media only screen and (min-width: 768px)
+.extra_nav ul li a {
+    color: rgb(32, 32, 32);
+
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+@media only screen and (min-width: 768px)
+.extra_nav ul li a {
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
