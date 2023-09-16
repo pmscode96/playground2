@@ -26,19 +26,19 @@
                 <nav class="header_div1_nav">
                     <h2>전체메뉴</h2>
                     <ul>
-                        <li>
+                        <li class="selectitem" onclick="line()">
                             <a href="">홈</a>
                         </li>
-                        <li>
+                        <li class="selectitem" onclick="line()">
                             <a href="">고민상담</a>
                         </li>
-                        <li>
+                        <li class="selectitem" onclick="line()">
                             <a href="">자유게시판</a>
                         </li>
-                        <li>
+                        <li class="selectitem" onclick="line()">
                             <a href="">고민게시판(유료)</a>
                         </li>
-                        <li>
+                        <li class="selectitem" onclick="line()">
                             <a href="">학교별게시판</a>
                         </li>
                     </ul>
@@ -433,15 +433,47 @@
 <script>
     const button = document.querySelector(".header_div1_button svg");
     const modal = document.querySelector(".header_div1_2");
+    const bc = document.querySelector(".header_div1_2 .div3");
     const body = document.querySelector("body");
 
-    const check = false;
+
 
     button.addEventListener("click", (e) => {
-            modal.style.visibility = 'visible';
-            body.style.overflowY = 'hidden';
-            // modal.classList.add('modalBody');
+
+       modal.style.visibility = 'visible';
+       body.style.overflowY = 'hidden';
+       // modal.classList.add('modalBody');
+
+        }
+        )
+    bc.addEventListener("click", (e) => {
+        modal.style.visibility = 'hidden';
+        body.style.overflowY = 'auto';
     })
+
+
+
+
+
+    let check = "";
+    const lines = document.querySelectorAll(".header_div1_nav ul .selectitem");
+    lines.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            lines.forEach((e) => {
+                e.classList.add('noline');
+            })
+            item.classList.add('line');
+        })
+    })
+
+
+
+    // lines.forEach((item) => {
+    //     item.addEventListener("click", (e) => {
+    //         e.target.style.classList.add('line');
+    //         check = true;
+    //     })
+    // })
 
 </script>
 </html>

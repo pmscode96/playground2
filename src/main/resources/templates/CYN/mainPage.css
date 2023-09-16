@@ -18,6 +18,13 @@
     url('./fonts/KakaoBigRegular (3).woff2') format("woff2")
 }
 
+.selectitem. noline{
+    border-bottom: 2px solid transparent;
+}
+.selectitem.line{
+    border-bottom: 2px solid rgb(57, 57, 57);
+}
+
 /*@font-face {*/
 /*    font-family: grandma_kja;*/
 /*    font-style: normal;*/
@@ -260,7 +267,8 @@ h4 {
 }
 .header_div1_nav ul li{
     height: 100%;
-    border-bottom: 2px solid rgb(57, 57, 57);
+    /*border-bottom: 2px solid rgb(57, 57, 57);*/
+    border-bottom: 2px solid transparent;
     box-sizing: border-box;
 
     display: list-item;
