@@ -45,9 +45,9 @@ dl, li, menu, ol, ul {
     list-style: none;
 }
 
-address, caption, cite, code, dfn, em, var {
+address, caption, cite, code, dfn, em, strong, var {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 #dkIndex {
@@ -78,7 +78,6 @@ address, caption, cite, code, dfn, em, var {
     height: 70px;
     background-color: #fff;
     top: 0;
-    border-bottom: 1px solid #e8e8e8;
 }
 
 #dkHead:before {
@@ -561,9 +560,140 @@ address, caption, cite, code, dfn, em, var {
 /* 사이드 메뉴 끝*/
 
 /* 메인 컨텐츠 시작 */
+
+#dkContent, #rootContent {
+    flex-grow: 1;
+    min-height: calc(100vh - (70px + 250px));
+}
+
+#dkContent {
+    position: relative;
+    margin: 0 0 -212px;
+}
+
+#mArticle {
+    padding: 0 0 250px;
+}
+
+.cont_mypage #mArticle {
+    padding-bottom: 212px;
+}
+
+.mypage_cont {
+    width: 700px;
+    margin: 0 auto;
+    /*padding-bottom: 170px;*/
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.group_profile {
+    position: relative;
+    min-height: 190px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: url(//t1.kakaocdn.net/together_image/bg_mypage.png) 98% 18px no-repeat;
+    background-size: 215px 160px;
+}
+
+.group_profile .area_name {
+    display: inline-block;
+    max-width: 550px;
+    vertical-align: top;
+}
+
+.group_profile .area_name .txt_nick {
+    max-width: 465px;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-size: 18px;
+}
+
+.group_profile .area_name .txt_name, .group_profile .area_name .txt_nick {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: KakaoBig Bold,sans-serif;
+}
+
+.group_profile .area_name .box_name {
+    display: inline-block;
+    position: relative;
+    max-width: 465px;
+}
+
+.group_profile .area_name .txt_name {
+    text-overflow: ellipsis;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.group_profile .area_thumb {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.group_profile .area_thumb .link_badge {
+    position: absolute;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.img_thumb {
+    display: block;
+}
+
+.group_profile .area_thumb .badge_thumb .img_thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.group_profile .area_thumb .profile_thumb .img_thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.group_profile .area_thumb .link_thumb {
+    display: block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.group_profile .area_setting {
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 3px;
+}
+
+.group_profile .area_setting .link_setting {
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+    background-color: initial;
+}
+/* 상단 프로필까지 */
+.hr{
+    background:#e8e8e8;
+    height:2px;
+    border:0;
+    margin: 0;
+}
+
 #kakaoContent {
     display: block;
-    width: 990px;
+    width: 1180px;
     margin: 0 auto;
     min-height: 484px;
 }
@@ -607,6 +737,11 @@ address, caption, cite, code, dfn, em, var {
 #kakaoGnb .list_menu .link_menu {
     font-weight: bold;
     color: #878787;
+}
+
+#kakaoGnb .list_menu .on .link_menu, #kakaoGnb .list_menu .link_menu:hover, #kakaoGnb .list_menu .link_menu:focus {
+    color: #1e1e1e;
+    text-decoration: underline;
 }
 
 .cont_public {
@@ -695,10 +830,25 @@ address, caption, cite, code, dfn, em, var {
     line-height: 27px;
 }
 
-.cont_public .wrap_cont > .item_info .info_cont * {
+.cont_public .wrap_cont > .item_info .info_cont p {
     font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif, '돋움', dotum !important;
     font-size: 15px !important;
     line-height: 27px !important;
+}
+
+/*클릭시 내용 나오는 부분*/
+.cont_public .wrap_cont .on .tit_info {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: bold;
+}
+
+.cont_public .wrap_cont .on .ico_arr {
+    background-position: -28px -40px;
+}
+
+.cont_public .wrap_cont .on .info_cont {
+    display: block;
 }
 
 .paging_comm {
@@ -784,7 +934,7 @@ address, caption, cite, code, dfn, em, var {
     color: #666;
 }
 
-.cont_public .bundle_btn {
+.bundle_btn {
     display: inline-block;
     float: right;
 }
@@ -799,13 +949,13 @@ address, caption, cite, code, dfn, em, var {
     background-color: #e8e8e8;
 }
 
-.cont_public .btn_cs {
+.btn_cs {
     float: right;
     margin: 50px 5px 5px 0;
     font-weight: bold;
 }
 
-.cont_public .bundle_btn .btn_cs {
+.bundle_btn .btn_cs {
     float: none;
     width: 186px;
     padding: 0;
@@ -813,7 +963,7 @@ address, caption, cite, code, dfn, em, var {
     text-align: center;
 }
 
-.cont_public .bundle_btn .btn_cs .ico_write {
+.bundle_btn .btn_cs .ico_write {
     width: 17px;
     height: 17px;
     margin: 12px 3px 0 0;
@@ -821,7 +971,11 @@ address, caption, cite, code, dfn, em, var {
     vertical-align: top;
 }
 
-
+.edit_content{
+    width:99%;
+    resize: none;
+    height: 300px;
+}
 
 /* 메인 컨텐츠 끝*/
 .hide{
@@ -830,7 +984,6 @@ address, caption, cite, code, dfn, em, var {
 /* 푸터 시작*/
 #dkFoot {
     position: relative;
-    border-top: 1px solid #e8e8e8;
 }
 
 .wrap_channel_banner {
@@ -957,19 +1110,19 @@ address, caption, cite, code, dfn, em, var {
     align-items: center;
 }
 
-.d_footer  .list_menu , .list_menu li{
+.d_footer .list_menu ,.d_footer .list_menu li{
     display: flex;
     align-items: center;
 }
 
-.d_footer  .list_menu li {
+.d_footer .list_menu li {
     position: relative;
     font-size: 13px;
     line-height: 1.54;
     letter-spacing: -.1px;
 }
 
-.d_footer  .list_menu li:after {
+.d_footer .list_menu li:after {
     content: "";
     display: block;
     width: 2px;
@@ -980,7 +1133,7 @@ address, caption, cite, code, dfn, em, var {
     background-color: #444;
 }
 
-.link_menu {
+.d_footer .link_menu {
     display: inline-block;
     vertical-align: top;
     padding: 6px 0;
