@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEACHERJOIN</title>
+    <link rel="stylesheet" href="./teacherJoin.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="div1">
+        <div class="div1_1">
+            <div class="div1_2">
+                <h3>놀이터</h3>
+            </div>
+        </div>
+        <div class="div1_2"></div>
+    </div>
+    <div class="div2">
+        <div class="div2_1">
+            <div class="div2_2">
+                <button class="b1">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-left">
+                        <path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path>
+                    </svg>
+                </button>
+                <h5>교직원 등록</h5>
+            </div>
+            <div class="div2_3"></div>
+            <div class="div2_4">
+                <div class="div2_5">
+                    <h6 class="h6_1">학교명</h6>
+                    <div class="d1">
+                        <div class="d1_1">
+                            <div class="d1_2">
+                                <input placeholder="학교 검색">
+                            </div>
+                            <div class="d1_3"></div>
+                        </div>
+                        <div class="dl_4">
+                            <button class="b1">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d11" style="height: 30px"></div>
+
+
+                    <h6 class="h6_2">직위</h6>
+                    <div class="d2">
+                        <div class="d2_1">
+                            <div class="d2_2">
+                                <div class="d2_3">
+                                    <input type="text" placeholder="직위 선택">
+                                    <span class="sp1">
+                                        <span class="sp2">
+                                            <i class="i1"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d21" style="height: 30px"></div>
+
+                    <div class="extra">
+                        <div class="extra_div1">
+                            <div class="extra_div2">
+                                <ul class="extra_ul1">
+                                    <li class="li1">
+                                        <span>교장</span>
+                                    </li>
+                                    <li class="li2">
+                                        <span>교감</span>
+                                    </li>
+                                    <li class="li3">
+                                        <span>부장교사</span>
+                                    </li>
+                                    <li class="li4">
+                                        <span>교사</span>
+                                    </li>
+                                    <li class="li5">
+                                        <span>교직원</span>
+                                    </li>
+                                    <li class="li6">
+                                        <span>기타교직원</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="extra_div3">
+                                <div class="div1"></div>
+                            </div>
+                            <div class="extra_div4">
+                                <div class="div1"></div>
+                            </div>
+                        </div>
+                        <div class="extra_bottom"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    const underline = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a1');
+    const h1 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a1 h5');
+    underline.addEventListener("mouseover", (e) => {
+        h1.style.textDecoration = 'underline';
+    })
+    underline.addEventListener("mouseout", (e) => {
+        h1.style.textDecoration = 'none';
+    })
+
+    const underline2 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a2');
+    const h2 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a2 h5');
+
+    underline2.addEventListener("mouseover", (e) => {
+        h2.style.textDecoration = 'underline';
+    })
+    underline2.addEventListener("mouseout", (e) => {
+        h2.style.textDecoration = 'none';
+    })
+</script>
+</html>

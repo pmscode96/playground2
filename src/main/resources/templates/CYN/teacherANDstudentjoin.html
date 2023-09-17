@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEACHERANDSTUDENTJOIN</title>
+    <link rel="stylesheet" href="./teacherANDstudentjoin.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="div1">
+        <div class="div1_1">
+            <div class="div1_2">
+                <h3>놀이터</h3>
+            </div>
+        </div>
+        <div class="div1_2"></div>
+    </div>
+    <div class="div2">
+        <div class="div2_1">
+            <div class="div2_2">
+                <a href="" class="a1">
+                    <h5>교사 회원가입</h5>
+                    <span></span>
+                </a>
+                <a href="" class="a2">
+                    <h5>학생 회원가입</h5>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    const underline = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a1');
+    const h1 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a1 h5');
+    underline.addEventListener("mouseover", (e) => {
+        h1.style.textDecoration = 'underline';
+    })
+    underline.addEventListener("mouseout", (e) => {
+        h1.style.textDecoration = 'none';
+    })
+
+    const underline2 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a2');
+    const h2 = document.querySelector('#wrap .div2 .div2_1 .div2_2 .a2 h5');
+
+    underline2.addEventListener("mouseover", (e) => {
+        h2.style.textDecoration = 'underline';
+    })
+    underline2.addEventListener("mouseout", (e) => {
+        h2.style.textDecoration = 'none';
+    })
+</script>
+</html>
