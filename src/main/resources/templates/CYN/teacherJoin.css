@@ -244,6 +244,7 @@ body, html {
     height: 36px;
     border-radius: 20px;
     background-color: #ebebeb;
+    /*background-color: #828282;*/
 }
 #wrap .div2 .div2_1 .div2_2 .b1 svg{
     overflow: visible;
