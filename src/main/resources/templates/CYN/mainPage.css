@@ -2680,8 +2680,8 @@ h4 {
     /*height: 100%;*/
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
-
+    /*background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);*/
+    background: url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 .main_div2_section1_div4 .div3 .d1 .a1 .d2{
     width: 100%;
@@ -2776,8 +2776,8 @@ h4 {
     /*height: 100%;*/
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
-
+    /*background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);*/
+    background: url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 .main_div2_section1_div4 .div3 .d2 .a1 .d2{
     width: 100%;
@@ -2872,8 +2872,8 @@ h4 {
     /*height: 100%;*/
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
-
+    /*background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);*/
+    background: url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 .main_div2_section1_div4 .div3 .d3 .a1 .d2{
     width: 100%;
@@ -2969,8 +2969,8 @@ h4 {
     /*height: 100%;*/
     overflow: hidden;
     border-radius: 6px;
-    background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
-
+    /*background: url(https://mud-kage.kakaocdn.net/dn/cxyjlY/btsrCvf7UZ2/P8fHRaLeX5bP8vRlu7datK/c360.jpg) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);*/
+    background: url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 .main_div2_section1_div4 .div3 .d4 .a1 .d2{
     width: 100%;
@@ -3029,6 +3029,8 @@ h4 {
 }
 
 .main_div2_section2 .div1{
+    margin-top: 20px;
+
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
@@ -3036,7 +3038,8 @@ h4 {
 
 }
 .main_div2_section2 .div1 .div2{
-    padding: 34px 26px 29px;
+    /*padding: 34px 26px 29px;*/
+    padding: 20px 26px 20px;
     border-radius: 12px 12px 0px 0px;
     position: relative;
     /*border-radius: 10px 10px 0px 0px;*/
@@ -3136,4 +3139,60 @@ h4 {
     font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
     text-align: right;
+}
+
+
+.main_div2_section2 .div1 .div5{
+    height: 281px;
+    padding: 31px 26px 46px;
+    border-radius: 0px 0px 12px 12px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+
+}
+.main_div2_section2 .div1 .div5 .d1{
+
+}
+.main_div2_section2 .div1 .div5 .d1 .a1{
+    display: inline-block;
+    vertical-align: top;
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.main_div2_section2 .div1 .div5 .d1 .a1 h4{
+    -webkit-font-smoothing: antialiased;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-style: normal;
+    font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    overflow-wrap: break-word;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.main_div2_section2 .div1 .div5 .d2{
+    cursor: pointer;
+}
+.main_div2_section2 .div1 .div5 .d2 .d2_1{
+    position: relative;
+
+    text-overflow: ellipsis;
+    /*text-overflow:clip;*/
+    overflow:hidden;
+    word-break:break-all;
+    /*white-space: nowrap;*/
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+
+
+    font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
+    color: #4a4a4a;
+    font-weight: lighter;
+
 }
