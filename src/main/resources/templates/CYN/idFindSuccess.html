@@ -20,7 +20,7 @@
     </div>
     <div class="div2">
         <div class="div2_1">
-            <p>최예니님의 아이디는 <b>yee62**</b> 입니다.</p>
+            <p>김철수님의 아이디는 <b>flwo12**</b> 입니다.</p>
             <div class="div2_2">
                 <button class="b1">로그인하러 이동</button>
                 <button class="b2" style="margin-left: 10px;">다른 번호로 찾기</button>
@@ -30,7 +30,20 @@
 </div>
 </body>
 <script>
+    const b1 = document.querySelector('.b1');
+    const b2 = document.querySelector('.b2');
+    b1.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = '#d2d2d2';
+    })
+    b1.addEventListener("mouseout", (e) => {
+        e.target.style.backgroundColor = '#fff';
+    })
 
-
+    b2.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = '#d2d2d2';
+    })
+    b2.addEventListener("mouseout", (e) => {
+        e.target.style.backgroundColor = '#fff';
+    })
 </script>
 </html>
