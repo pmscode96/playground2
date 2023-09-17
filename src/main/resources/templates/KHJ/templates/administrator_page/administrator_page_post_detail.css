@@ -5,6 +5,11 @@
 body {
     margin: 0;
     line-height: inherit;
+    user-select: none;
+}
+
+::after, ::before {
+    --tw-content: "";
 }
 
 *, ::after, ::before {
@@ -293,7 +298,6 @@ button, input, optgroup, select, textarea {
 }
 
 [type=button], [type=reset], [type=submit], button {
-    -webkit-appearance: button;
     background-color: transparent;
     background-image: none;
 }
