@@ -155,7 +155,7 @@
                                                                 </svg>
                                                             </button>
                                                             <!--                                                            리스트 박스-->
-                                                            <div class="absolute top-[42px] right-0 z-10 w-[93px]">
+                                                            <div class="absolute top-[42px] right-0 z-10 w-[93px]" style="display: none;">
                                                                 <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu max-h-[228px] overflow-auto">
                                                                     <li tabindex="-1" data-option-value="POST" class="undefined">
                                                                         <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="POST">문의</button>
@@ -208,7 +208,7 @@
                                                 </button>
 
                                                 <!--                                                            리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[93px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[93px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu max-h-[228px] overflow-auto">
                                                         <li tabindex="-1" data-option-value="POST" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="POST">전체</button>
@@ -236,11 +236,26 @@
                                                     </svg>
                                                 </button>
 
+                                                <!--                                                            리스트 박스-->
+                                                <div class="absolute top-[42px] right-0 z-10 w-[93px]" style="display: none;">
+                                                    <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu max-h-[228px] overflow-auto">
+                                                        <li tabindex="-1" data-option-value="POST" class="undefined">
+                                                            <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="POST">전체</button>
+                                                        </li>
+                                                        <li tabindex="-1" data-option-value="NAME" class="undefined">
+                                                            <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="NAME">교사</button>
+                                                        </li>
+                                                        <li tabindex="-1" data-option-value="NAME" class="undefined">
+                                                            <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="NAME">학생</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
 
                                             </div>
                                         </div>
                                         <!--                                        리스트 csv로 다운로드 버튼-->
-                                        <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
+                                        <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
                                     </div>
                                 </div>
                                 <!--                                하단 부분-->
@@ -334,4 +349,71 @@
         </div>
     </div>
 </body>
+<script>
+    <!--    상단 게시글 검색 리스트 박스-->
+    const questionlistSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div");
+    const questionlistSearchlistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > div");
+    questionlistSearch.addEventListener("click", (e) => {
+
+        if(questionlistSearchlistbox.style.display === 'none'){
+            questionlistSearchlistbox.style.display = 'block';
+        }else {
+            questionlistSearchlistbox.style.display = 'none';
+        }
+    })
+    // 게시글 리스트 박스 글자 있는 부분
+    const questionlistVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > button > span");
+    // 상단 게시글 리스트 박스 선택 시 나타내기
+    questionlistSearchlistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        questionlistVal.innerText = targetText;
+    })
+
+    // <!--    문의 전체 검색 리스트 박스-->
+    const questionlistAllSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1)");
+    const questionlistAllSearchlistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > div");
+    questionlistAllSearch.addEventListener("click", (e) => {
+
+        if(questionlistAllSearchlistbox.style.display === 'none'){
+            questionlistAllSearchlistbox.style.display = 'block';
+        }else {
+            questionlistAllSearchlistbox.style.display = 'none';
+        }
+    })
+    // 문의 전체 리스트 박스 글자 있는 부분
+    const questionlistAllVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > button > span");
+    // 문의 전체 리스트 박스 선택 시 나타내기
+    questionlistAllSearchlistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        questionlistAllVal.innerText = targetText;
+    })
+
+    // <!--    구분 전체 검색 리스트 박스-->
+    const whoquestionlistAllSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2)");
+    const whoquestionlistAllSearchlistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > div");
+    whoquestionlistAllSearch.addEventListener("click", (e) => {
+
+        if(whoquestionlistAllSearchlistbox.style.display === 'none'){
+            whoquestionlistAllSearchlistbox.style.display = 'block';
+        }else {
+            whoquestionlistAllSearchlistbox.style.display = 'none';
+        }
+    })
+    // 구분 전체 리스트 박스 글자 있는 부분
+    const whoquestionlistAllVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > button > span");
+    // 구분 전체 리스트 박스 선택 시 나타내기
+    whoquestionlistAllSearchlistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        whoquestionlistAllVal.innerText = targetText;
+    })
+</script>
 </html>

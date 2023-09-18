@@ -194,7 +194,7 @@
                                                     </svg>
                                                 </button>
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">회원 전체</button>
@@ -219,7 +219,7 @@
                                                     </svg>
                                                 </button>
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">전체</button>
@@ -309,24 +309,50 @@
     </div>
 </body>
 <script>
-    // 왼쪽 리스트 중 회원관리 버튼
-    const postManage = document.querySelector("#_next > div > div > nav > ul > li:nth-child(2)");
-    // 오른쪽 관리 리스트 중 회원
-    const userMangelist = document.querySelector("#_next > div > div > div.basis-0.grow.shrink-0.overflow-x-auto.User");
-    // 오른쪽 관리 리스트 중 게시글
-    const postMangelist = document.querySelector("#_next > div > div > div.basis-0.grow.shrink-0.overflow-x-auto.post");
-    // 오른쪽 관리 리스트 중 학교
-    const schoolMangelist = document.querySelector("#_next > div > div > div.basis-0.grow.shrink-0.overflow-x-auto.school");
-    // 오른쪽 관리 리스트 중 문의
-    const  questionlist = document.querySelector("#_next > div > div > div.basis-0.grow.shrink-0.overflow-x-auto.question");
+    <!--    회원 전체 검색 리스트 박스-->
+    const userlistAllSearch = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1)");
+    const userlistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > div");
+    userlistAllSearch.addEventListener("click", (e) => {
 
-    postManage.addEventListener("click", (e) => {
-        alert("hi");
-        console.log(e.target);
-        userManage.style.display = 'none';
-        schoolMangelist.style.display = 'none';
-        questionlist.style.display = 'none';
-        postManage.style().display = 'block';
+        if(userlistSearchAlllistbox.style.display === 'none'){
+            userlistSearchAlllistbox.style.display = 'block';
+        }else {
+            userlistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 회원 전체 검색 리스트 박스 글자 있는 부분
+    const userlistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > button > span");
+    // 회원 전체 검색 리스트 박스 선택 시 나타내기
+    userlistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        userlistAllboxVal.innerText = targetText;
+    })
+
+    <!--    구분 전체 검색 리스트 박스-->
+    const wholistAllSearch = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2)");
+    const wholistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > div");
+    wholistAllSearch.addEventListener("click", (e) => {
+
+        if(wholistSearchAlllistbox.style.display === 'none'){
+            wholistSearchAlllistbox.style.display = 'block';
+        }else {
+            wholistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 구분 전체 검색 리스트 박스 글자 있는 부분
+    const wholistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > button > span");
+    // 구분 전체 검색 리스트 박스 선택 시 나타내기
+    wholistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        wholistAllboxVal.innerText = targetText;
     })
 </script>
 </html>

@@ -154,7 +154,7 @@
                                                                 </svg>
                                                             </button>
 <!--                                                            리스트 박스&ndash;&gt;-->
-                                                            <div class="absolute top-[42px] right-0 z-10 w-[93px]">
+                                                            <div class="absolute top-[42px] right-0 z-10 w-[93px]" style="display: none;">
                                                                 <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu max-h-[228px] overflow-auto">
                                                                     <li tabindex="-1" data-option-value="POST" class="undefined">
                                                                         <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="POST">게시글</button>
@@ -202,7 +202,7 @@
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                                                     </svg>
                                                 </button>
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <!--                                                    리스트 박스-->
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu max-h-[228px] overflow-auto">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
@@ -228,7 +228,7 @@
                                                     </svg>
                                                 </button>
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">공개범위 전체</button>
@@ -247,7 +247,7 @@
                                             </div>
                                         </div>
                                         <!--                                        리스트 csv로 다운로드 버튼-->
-                                        <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
+                                        <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
                                         <!--                                        게시글 등록-->
                                         <div>
                                             <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">게시글 등록</button>
@@ -333,4 +333,73 @@
         </div>
     </div>
 </body>
+<script>
+    <!--    상단 게시글 검색 리스트 박스-->
+    const postlistSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div");
+    const postlistSearchlistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > div");
+    postlistSearch.addEventListener("click", (e) => {
+
+        if(postlistSearchlistbox.style.display === 'none'){
+            postlistSearchlistbox.style.display = 'block';
+        }else {
+            postlistSearchlistbox.style.display = 'none';
+        }
+    })
+    // 게시글 리스트 박스 글자 있는 부분
+    const postlistVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > button > span");
+    // 상단 게시글 리스트 박스 선택 시 나타내기
+    postlistSearchlistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        postlistVal.innerText = targetText;
+    })
+
+    <!--    중단 게시글 전체 리스트 박스-->
+    const postlistAll = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1)");
+    const postlistAlllistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > div");
+    postlistAll.addEventListener("click", (e) => {
+
+        if(postlistAlllistbox.style.display === 'none'){
+            postlistAlllistbox.style.display = 'block';
+        }else {
+            postlistAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 게시글 전체 리스트 박스 글자 있는 부분
+    const postlistAllVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > button > span");
+    // 상단 게시글 리스트 박스 선택 시 나타내기
+    postlistAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        postlistAllVal.innerText = targetText;
+    })
+
+    <!--    구분 전체 리스트 박스-->
+    const wholistAll = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2)");
+    const whoAlllistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > div");
+    wholistAll.addEventListener("click", (e) => {
+
+        if(whoAlllistbox.style.display === 'none'){
+            whoAlllistbox.style.display = 'block';
+        }else {
+            whoAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 구분 전체 리스트 박스 글자 있는 부분
+    const wholistAllVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > button > span");
+    // 상단 게시글 리스트 박스 선택 시 나타내기
+    whoAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        wholistAllVal.innerText = targetText;
+    })
+</script>
 </html>

@@ -175,7 +175,7 @@
                                                 </button>
 
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">회원 전체</button>
@@ -194,14 +194,14 @@
                                         <div class="shrink-0">
                                             <div class="relative">
                                                 <button type="button" class="surface_primary border px-[16px] h-[32px] py-[8px] border_black_opacity rounded-[16px] flex items-center max-w-[164px] outline-none">
-                                                    <span class="content_secondary font_label_medium_lg text-ellipsis overflow-hidden whitespace-nowrap">교사 전체</span>
+                                                    <span class="content_secondary font_label_medium_lg text-ellipsis overflow-hidden whitespace-nowrap">전체</span>
                                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0 ml-[4px] w-[10px] h-[10px]">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                                                     </svg>
                                                 </button>
 
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">전체</button>
@@ -217,13 +217,15 @@
                                             </div>
                                         </div>
 <!--                                        리스트 csv로 다운로드 버튼-->
-                                        <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
+                                        <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
                                         <div>
 <!--                                            쪽지 보내기-->
-                                            <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">
+                                            <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">
                                                 <div class="flex items-center justify-center">
                                                     <div>메시지</div>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" class="ml-[4px] shrink-0"><path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path><path d="M19.01 3.829H20v6.656a1 1 0 1 1-2 0V7.244l-5.293 5.293a1 1 0 0 1-1.414-1.415l5.293-5.292h-3.243a1 1 0 1 1 0-2H19.01Z"></path>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" class="ml-[4px] shrink-0">
+                                                        <path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path>
+                                                        <path d="M19.01 3.829H20v6.656a1 1 0 1 1-2 0V7.244l-5.293 5.293a1 1 0 0 1-1.414-1.415l5.293-5.292h-3.243a1 1 0 1 1 0-2H19.01Z"></path>
                                                     </svg>
                                                 </div>
                                             </button>
@@ -331,4 +333,51 @@
         </div>
     </div>
 </body>
+<script>
+    <!--    회원 전체 검색 리스트 박스-->
+    const userlistAllSearch = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1)");
+    const userlistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > div");
+    userlistAllSearch.addEventListener("click", (e) => {
+
+        if(userlistSearchAlllistbox.style.display === 'none'){
+            userlistSearchAlllistbox.style.display = 'block';
+        }else {
+            userlistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 회원 전체 검색 리스트 박스 글자 있는 부분
+    const userlistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > button > span");
+    // 회원 전체 검색 리스트 박스 선택 시 나타내기
+    userlistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        userlistAllboxVal.innerText = targetText;
+    })
+
+    <!--    구분 전체 검색 리스트 박스-->
+    const wholistAllSearch = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2)");
+    const wholistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > div");
+    wholistAllSearch.addEventListener("click", (e) => {
+
+        if(wholistSearchAlllistbox.style.display === 'none'){
+            wholistSearchAlllistbox.style.display = 'block';
+        }else {
+            wholistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 구분 전체 검색 리스트 박스 글자 있는 부분
+    const wholistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > button > span");
+    // 구분 전체 검색 리스트 박스 선택 시 나타내기
+    wholistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        wholistAllboxVal.innerText = targetText;
+    })
+</script>
 </html>

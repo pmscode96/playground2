@@ -156,7 +156,7 @@
                                                             </button>
 
                                                             <!--                                                리스트 박스-->
-                                                            <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                            <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                                 <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                                     <li tabindex="-1" data-option-value="" class="undefined">
                                                                         <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">학교</button>
@@ -206,7 +206,7 @@
                                                 </button>
 
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">지역 전체</button>
@@ -232,7 +232,7 @@
                                                 </button>
 
                                                 <!--                                                리스트 박스-->
-                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]">
+                                                <div class="absolute top-[42px] right-0 z-10 w-[248px]" style="display: none;">
                                                     <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu false">
                                                         <li tabindex="-1" data-option-value="" class="undefined">
                                                             <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">학교 전체</button>
@@ -245,7 +245,7 @@
                                             </div>
                                         </div>
                                         <!--                                        리스트 csv로 다운로드 버튼-->
-                                        <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
+                                        <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">CSV 다운로드</button>
                                         <!--                                        회원 등록-->
                                         <div>
                                             <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">학교 등록</button>
@@ -344,4 +344,74 @@
         </div>
     </div>
 </body>
+<script>
+    <!--    학교 검색 리스트 박스-->
+    const schoollistSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div");
+    const schoollistSearchlistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > div");
+    schoollistSearch.addEventListener("click", (e) => {
+
+        if(schoollistSearchlistbox.style.display === 'none'){
+            schoollistSearchlistbox.style.display = 'block';
+        }else {
+            schoollistSearchlistbox.style.display = 'none';
+        }
+    })
+
+    // 학교 검색 리스트 박스 글자 있는 부분
+    const schoollistboxVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > header > div > div > label > div > div.min-w-\\[76px\\] > div > button > span");
+    // 학교 검색 리스트 박스 선택 시 나타내기
+    schoollistSearchlistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        schoollistboxVal.innerText = targetText;
+    })
+
+    <!--    지역 전체 검색 리스트 박스-->
+    const arealistAllSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1)");
+    const arealistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > div");
+    arealistAllSearch.addEventListener("click", (e) => {
+
+        if(arealistSearchAlllistbox.style.display === 'none'){
+            arealistSearchAlllistbox.style.display = 'block';
+        }else {
+            arealistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 지역 전체 검색 리스트 박스 글자 있는 부분
+    const arealistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(1) > div > button > span");
+    // 지역 전체 검색 리스트 박스 선택 시 나타내기
+    arealistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        arealistAllboxVal.innerText = targetText;
+    })
+
+    <!--    학교 전체 검색 리스트 박스-->
+    const schoollistAllSearch = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2)");
+    const schoollistSearchAlllistbox = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > div");
+    schoollistAllSearch.addEventListener("click", (e) => {
+
+        if(schoollistSearchAlllistbox.style.display === 'none'){
+            schoollistSearchAlllistbox.style.display = 'block';
+        }else {
+            schoollistSearchAlllistbox.style.display = 'none';
+        }
+    })
+
+    // 학교 전체 검색 리스트 박스 글자 있는 부분
+    const schoollistAllboxVal = document.querySelector("#_next > div > div > div > div > div > div.sticky.top-0.z-10.surface_primary > div.mt-\\[32px\\].flex.justify-between.items-center > div.flex.items-center.gap-x-\\[12px\\] > div:nth-child(2) > div > button > span");
+    // 학교 전체 검색 리스트 박스 선택 시 나타내기
+    schoollistSearchAlllistbox.addEventListener("click", (e) => {
+        const targetText = e.target.innerText;
+        // 선택박스 글자 초기화
+        // postlistVal.innerText = "게시글";
+
+        schoollistAllboxVal.innerText = targetText;
+    })
+</script>
 </html>
