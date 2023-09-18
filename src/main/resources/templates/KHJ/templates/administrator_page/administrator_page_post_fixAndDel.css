@@ -2,7 +2,7 @@
     height: 100%;
 }
 
-body {
+.body {
     margin: 0;
     line-height: inherit;
 }
@@ -1049,12 +1049,12 @@ textarea {
     position: relative;
 }
 
-body, .editor {
-    padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 16px;
-    font-family: Pretendard;
-}
+/*body, .editor {*/
+/*    padding-top: 20px;*/
+/*    padding-left: 0px;*/
+/*    padding-right: 16px;*/
+/*    font-family: Pretendard;*/
+/*}*/
 
 .steadio-post {
     font-size: 16px;
@@ -1070,10 +1070,10 @@ body, .editor {
     word-wrap: break-word;
 }
 
-body {
-    margin: 0px 16px;
-    user-select: none;
-}
+/*.body {*/
+/*    margin: 0px 16px;*/
+/*    user-select: none;*/
+/*}*/
 
 .steadio-post.mce-content-body:not([dir=rtl])[data-mce-placeholder]:not(.mce-visualblocks)::before {
     font-size: 14px;
