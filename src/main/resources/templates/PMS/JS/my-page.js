@@ -1,11 +1,17 @@
-let title = document.querySelectorAll(".info_tit");
+let title = document.querySelectorAll(".item_info");
 let content = document.querySelector(".info_cont");
 
 
-title[1].addEventListener("click", (e)=>{
-    console.log(e);
-})
+for (let i = 0; i < title.length; i++) {
 
-content.addEventListener("click", evt => {
-    console.log(evt);
-})
+    let item = title.item(i);
+
+
+    item.addEventListener("click", e =>{
+        if(item.classList.contains('on')){
+            item.classList.remove('on');
+        }else{
+            item.classList.add('on');
+        }
+    })
+}

@@ -170,7 +170,7 @@
                             <div class="cont_thumb">
                                 <div class="file_upload">
                                     <img profileimagecheck="" alt="프로필" class="img_thumb" src="https://t1.kakaocdn.net/together_image/common/avatar/avatar04.png">
-                                    <label class="lab_photo">
+                                    <label class="lab_photo" for="profileInput">
                                         <span class="ico_together ico_photo">사진첨부</span>
                                     </label>
                                 </div>
@@ -199,13 +199,13 @@
                                         <dt> 연락처 <!----></dt>
                                         <dd class="phone_item">
                                             <div class="group_tf">
-                                                <button type="button" class="btn_number"> 휴대폰 번호 입력 </button>
+                                                <button type="button" class="btn_number phone_btn"> 휴대폰 번호 입력 </button>
                                             </div>
                                         </dd>
                                         <dt> 이메일 <!----></dt>
                                         <dd class="phone_item">
                                             <div class="group_tf">
-                                                <button type="button" class="btn_number"> 이메일 입력 </button>
+                                                <button type="button" class="btn_number email_btn"> 이메일 입력 </button>
                                             </div>
                                         </dd>
                                         <dt> 나이 <!----></dt>
@@ -215,7 +215,7 @@
                                                     <div class="opt_comm">
                                                         <label for="opAge" class="screen_out">나이 선택</label>
                                                         <span class="select_option select_on">선택안함</span>
-                                                        <select id="opAge" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid">
+                                                        <select id="opAge" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid" onchange="handleOnChange(this)">
                                                             <option value="" class="select_option"> 선택안함 </option>
                                                             <option value="15">2009년생</option><option value="16">2008년생</option><option value="17">2007년생</option><option value="18">2006년생</option><option value="19">2005년생</option><option value="20">2004년생</option><option value="21">2003년생</option><option value="22">2002년생</option><option value="23">2001년생</option><option value="24">2000년생</option><option value="25">1999년생</option><option value="26">1998년생</option><option value="27">1997년생</option><option value="28">1996년생</option><option value="29">1995년생</option><option value="30">1994년생</option><option value="31">1993년생</option><option value="32">1992년생</option><option value="33">1991년생</option><option value="34">1990년생</option><option value="35">1989년생</option><option value="36">1988년생</option><option value="37">1987년생</option><option value="38">1986년생</option><option value="39">1985년생</option><option value="40">1984년생</option><option value="41">1983년생</option><option value="42">1982년생</option><option value="43">1981년생</option><option value="44">1980년생</option><option value="45">1979년생</option><option value="46">1978년생</option><option value="47">1977년생</option><option value="48">1976년생</option><option value="49">1975년생</option><option value="50">1974년생</option><option value="51">1973년생</option><option value="52">1972년생</option><option value="53">1971년생</option><option value="54">1970년생</option><option value="55">1969년생</option><option value="56">1968년생</option><option value="57">1967년생</option><option value="58">1966년생</option><option value="59">1965년생</option><option value="60">1964년생</option><option value="61">1963년생</option><option value="62">1962년생</option><option value="63">1961년생</option><option value="64">1960년생</option><option value="65">1959년생</option><option value="66">1958년생</option><option value="67">1957년생</option><option value="68">1956년생</option><option value="69">1955년생</option><option value="70">70대</option>
                                                         </select>
@@ -250,7 +250,7 @@
                                                     <div class="opt_comm">
                                                         <label for="selectTarget" class="screen_out">시,도 지역선택</label>
                                                         <span class="select_option select_on">시,도 선택</span>
-                                                        <select name="parentRegion" id="selectTarget" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid">
+                                                        <select name="parentRegion" id="selectTarget" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid" onchange="handleOnChange(this)">
                                                             <option value="">시, 도 선택</option><option value="11"> 서울 </option><option value="26"> 부산 </option><option value="27"> 대구 </option><option value="28"> 인천 </option><option value="29"> 광주 </option><option value="30"> 대전 </option><option value="31"> 울산 </option><option value="36"> 세종 </option><option value="41"> 경기 </option><option value="42"> 강원 </option><option value="43"> 충북 </option><option value="44"> 충남 </option><option value="45"> 전북 </option><option value="46"> 전남 </option><option value="47"> 경북 </option><option value="48"> 경남 </option><option value="50"> 제주 </option><option value="99"> 해외 </option>
                                                         </select>
                                                         <span class="box_arrow">
@@ -263,7 +263,7 @@
                                                         <label for="selectRegion" class="screen_out">시,군,구 지역선택</label>
                                                         <span class="select_option"></span>
                                                         <span class="select_option select_on">시,군,구 지역선택</span>
-                                                        <select name="region" id="selectRegion" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid">
+                                                        <select name="region" id="selectRegion" selectaccessibility="" class="opt_select ng-untouched ng-pristine ng-valid"  onchange="handleOnChange(this)">
                                                             <option value="">시,군,구 지역선택</option><option value="41110"> 수원시 </option><option value="41111"> 수원시 장안구 </option><option value="41113"> 수원시 권선구 </option><option value="41115"> 수원시 팔달구 </option><option value="41117"> 수원시 영통구 </option><option value="41130"> 성남시 </option><option value="41131"> 성남시 수정구 </option><option value="41133"> 성남시 중원구 </option><option value="41135"> 성남시 분당구 </option><option value="41150"> 의정부시 </option><option value="41170"> 안양시 </option><option value="41171"> 안양시 만안구 </option><option value="41173"> 안양시 동안구 </option><option value="41190"> 부천시 </option><option value="41210"> 광명시 </option><option value="41220"> 평택시 </option><option value="41250"> 동두천시 </option><option value="41270"> 안산시 </option><option value="41271"> 안산시 상록구 </option><option value="41273"> 안산시 단원구 </option><option value="41280"> 고양시 </option><option value="41281"> 고양시 덕양구 </option><option value="41285"> 고양시 일산동구 </option><option value="41287"> 고양시 일산서구 </option><option value="41290"> 과천시 </option><option value="41310"> 구리시 </option><option value="41360"> 남양주시 </option><option value="41370"> 오산시 </option><option value="41390"> 시흥시 </option><option value="41410"> 군포시 </option><option value="41430"> 의왕시 </option><option value="41450"> 하남시 </option><option value="41460"> 용인시 </option><option value="41461"> 용인시 처인구 </option><option value="41463"> 용인시 기흥구 </option><option value="41465"> 용인시 수지구 </option><option value="41480"> 파주시 </option><option value="41500"> 이천시 </option><option value="41550"> 안성시 </option><option value="41570"> 김포시 </option><option value="41590"> 화성시 </option><option value="41610"> 광주시 </option><option value="41630"> 양주시 </option><option value="41650"> 포천시 </option><option value="41670"> 여주시 </option><option value="41800"> 연천군 </option><option value="41820"> 가평군 </option><option value="41830"> 양평군 </option>
                                                         </select>
                                                         <span class="box_arrow">
@@ -275,7 +275,7 @@
                                         </dd>
                                         <update-phone-modal>
                                             <modal>
-                                                <div tabindex="-1" role="dialog" class="ngdialog-content" id="modalOFF" style="position: fixed; display: none; top: 25%; margin-left: -192px;">
+                                                <div tabindex="-1" role="dialog" class="ngdialog-content modalOFF"  style="position: fixed; top: 25%; margin-left: -192px;">
                                                     <modal-content>
                                                         <div class="inner_together_layer inner_together_layer2">
                                                             <div class="layer_head">
@@ -287,7 +287,7 @@
                                                                         <legend class="screen_out">휴대폰번호 변경 양식</legend>
                                                                         <div class="wrap_phone write_phone">
                                                                             <dl class="list_write">
-                                                                                <dt> 같이가치와 연락가능한 휴대폰 번호를 입력해주세요.<br>입력하신 휴대폰 번호로 발송된 인증번호를 입력 후 확인 버튼 클릭 시 휴대폰 번호가 즉시 변경됩니다. </dt>
+                                                                                <dt> 놀이터와 연락가능한 휴대폰 번호를 입력해주세요.<br>입력하신 휴대폰 번호로 발송된 인증번호를 입력 후 확인 버튼 클릭 시 휴대폰 번호가 즉시 변경됩니다. </dt>
                                                                                 <dd>
                                                                                     <div class="info_phone">
                                                                                         <div class="group_tf">
@@ -335,7 +335,7 @@
                                         </update-phone-modal>
                                         <update-email-modal>
                                             <modal>
-                                                <div tabindex="-1" role="dialog" class="ngdialog-content" id="modalOFF" style="position: fixed; display: none; top: 25%; margin-left: -192px;">
+                                                <div tabindex="-1" role="dialog" class="ngdialog-content modalOFF" c style="position: fixed; top: 25%; margin-left: -192px;">
                                                     <modal-content>
                                                         <div class="inner_together_layer inner_together_layer2">
                                                             <div class="layer_head">
@@ -347,7 +347,7 @@
                                                                         <legend class="screen_out">이메 변경 양식</legend>
                                                                         <div class="wrap_phone write_phone">
                                                                             <dl class="list_write">
-                                                                                <dt> 같이가치와 연락가능한 이메일 입력해주세요.<br>입력하신 이메일 주소로 발송된 인증번호를 입력 후<br>확인 버튼 클릭 시 이메일 주소가 즉시 변경됩니다. </dt>
+                                                                                <dt> 놀이터와 연락가능한 이메일 입력해주세요.<br>입력하신 이메일 주소로 발송된 인증번호를 입력 후<br>확인 버튼 클릭 시 이메일 주소가 즉시 변경됩니다. </dt>
                                                                                 <dd>
                                                                                     <div class="info_phone" style="width: 100%;">
                                                                                         <div class="group_tf" style="width: 100%;">
@@ -458,7 +458,9 @@
             </div>
         </together-footer>
         <!--푸터 끝-->
+        <div class="dimmed_layer" style="height: 100%; position: fixed; top: 0px; left: 0px; right: 0px;"></div>
     </div>
 </div>
 </body>
+<script type="text/javascript" src="JS/edit-profile.js"></script>
 </html>
