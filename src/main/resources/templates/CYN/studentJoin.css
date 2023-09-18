@@ -21,6 +21,23 @@
     src: url('./fonts/Roboto-Regular.woff') format("woff"),
     url('./fonts/Roboto-Regular.woff') format("woff")
 }
+
+
+@font-face {
+    font-family: KakaoBig Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigBold (4).woff2') format("woff2"),
+    url("./fonts/KakaoBigBold (4).woff2") format("woff2")
+}
+
+@font-face {
+    font-family: KakaoBig Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigRegular (3).woff2') format("woff2"),
+    url('./fonts/KakaoBigRegular (3).woff2') format("woff2")
+}
 body {
     font-family: NotoSansKR-Bold, Noto Sans, sans-serif,Roboto-Regular;
 }
@@ -292,6 +309,8 @@ body, html {
     font-weight: 500;
     line-height: 1.2;
     margin-top: 0;
+
+    font-family: "KakaoBig Bold","KakaoBig Regular";
 }
 #wrap .div2 .div2_1 .div2_4 .div2_5 .d1{
     margin-right: -10px;
@@ -326,6 +345,8 @@ body, html {
     outline: none;
     padding: 0 16px;
     font-size: 14px;
+
+    font-family: "KakaoBig Regular";
 }
 #wrap .div2 .div2_1 .div2_4 .div2_5 .d1 .dl_3{
     max-height: 400px;
@@ -361,6 +382,8 @@ body, html {
     /*-webkit-transition: all .25s;*/
     transition: all .25s;
     white-space: nowrap;
+
+    font-family: "KakaoBig Bold","KakaoBig Regular";
 
 }
 #wrap .div2 .div2_1 .div2_4 .div2_5 .d11{
@@ -629,6 +652,8 @@ body, html {
     font-weight: 500;
     line-height: 1.2;
     margin-top: 0;
+
+    font-family: "KakaoBig Bold","KakaoBig Regular";
 }
 
 #wrap .div2 .div2_1 .div2_4 .div2_5 .h6_5_div1{
@@ -640,6 +665,8 @@ body, html {
 
     width: 100%;
 
+
+    font-family: "KakaoBig Regular";
 }
 #wrap .div2 .div2_1 .div2_4 .div2_5 .h6_5_div1 .select2{
 
@@ -727,6 +754,8 @@ body, html {
     transition: all .25s;
     white-space: nowrap;
     text-transform: none;
+
+    font-family: "KakaoBig Bold","KakaoBig Regular";
 }
 
 /*.extra{*/
