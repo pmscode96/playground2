@@ -223,22 +223,22 @@ label {
     width: 88px;
     height: 27px;
     margin: 0 auto;
-    background: #fff url(/images/pc/logo_kakao.png) no-repeat 0 0;
+    background: #fff url(logo_kakao.png) no-repeat 0 0;
     background-size: 100px 80px;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 27px;
     text-align: center;
 }
 #wrap .div1 .div2 .main1 .main1_div1 .h1 .span1 .span2{
     position: relative;
-    z-index: 3;
+    z-index: -1;
     width: 100%;
     height: 100%;
     display: block;
     overflow: hidden;
 
-    width: 88px;
-    height: 27px;
+    /*width: 88px;*/
+    /*height: 27px;*/
 }
 
 .main1_article1{
@@ -482,9 +482,7 @@ label {
     text-align: center;
 }
 .main1_article1 .div1 .div2 .form1 .d4 .bt1{
-    /*background-color: #fee500;*/
-    background-color: #191919;
-
+    background-color: #fee500;
     font-style: normal;
     font-weight: 400;
     display: block;
@@ -494,10 +492,8 @@ label {
     /*font-weight: 400;*/
     font-size: 16px;
     line-height: 51px;
-    /*color: #191919;*/
-    color: #FFFFFF;
+    color: #191919;
 }
-
 .main1_article1 .div1 .div2 .form1 .d4 .sp1{
     position: relative;
     display: block;
