@@ -22,6 +22,22 @@
     url('./fonts/Roboto-Regular.woff') format("woff")
 }
 
+@font-face {
+    font-family: KakaoBig Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigBold (4).woff2') format("woff2"),
+    url("./fonts/KakaoBigBold (4).woff2") format("woff2")
+}
+
+@font-face {
+    font-family: KakaoBig Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigRegular (3).woff2') format("woff2"),
+    url('./fonts/KakaoBigRegular (3).woff2') format("woff2")
+}
+
 
 /*.main1_article1 .div1 .div2 .form1 .d3 .d3_1 label .span2.yellow{*/
 /*    margin: 0 8px 0 0;*/
@@ -277,6 +293,8 @@ label {
     border: solid #ccc;
     border-width: 0 0 2px;
 
+
+    font-family: "KakaoBig Regular","KakaoBig Bold";
 }
 .main1_article1 .div1 .div2 .form1 .d1 .d1_1 label{
     position: absolute;
@@ -293,7 +311,7 @@ label {
     min-height: 45px;
     padding: 10px 0 8px;
     border: 0;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 25px;
     color: #191919;
     background-color: transparent;
@@ -321,6 +339,8 @@ label {
     position: relative;
     border: solid #ccc;
     border-width: 0 0 2px;
+
+    font-family: "KakaoBig Regular","KakaoBig Bold";
 }
 .main1_article1 .div1 .div2 .form1 .d2 .d2_1 label{
     position: absolute;
@@ -333,9 +353,9 @@ label {
 .main1_article1 .div1 .div2 .form1 .d2 .d2_1 input{
     padding: 12px 0 8px;
     font: small-caption;
-    font-size: 18px;
+    font-size: 17px;
     font-family: -apple-system,Roboto,NotoSans,AppleSDGothicNeo-Regular,맑은 고딕,Malgun Gothic,돋움,dotum,sans-serif;
-    letter-spacing: .15em;
+    letter-spacing: 0em;
     position: relative;
     z-index: 1;
     width: 100%;
