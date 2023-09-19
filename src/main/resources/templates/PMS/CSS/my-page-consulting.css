@@ -851,6 +851,13 @@ address, caption, cite, code, dfn, em, strong, var {
     display: block;
 }
 
+.edit_content {
+    width: 99%;
+    resize: none;
+    height: 300px;
+}
+
+
 .paging_comm {
     border-top: 1px solid #000;
     margin-top: -1px;
@@ -974,6 +981,8 @@ address, caption, cite, code, dfn, em, strong, var {
     background-position: -80px -60px;
     vertical-align: top;
 }
+
+
 
 /* 메인 컨텐츠 끝*/
 .hide{
