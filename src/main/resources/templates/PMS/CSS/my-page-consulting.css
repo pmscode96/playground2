@@ -963,6 +963,10 @@ address, caption, cite, code, dfn, em, strong, var {
     text-align: center;
 }
 
+.hide_btn{
+    display: none;
+}
+
 .bundle_btn .btn_cs .ico_write {
     width: 17px;
     height: 17px;

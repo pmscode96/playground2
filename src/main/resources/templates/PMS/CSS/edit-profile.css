@@ -794,6 +794,24 @@ dl, li, menu, ol, ul {
     padding-right: 4px;
 }
 
+.edit_school{
+    width: 100%;
+}
+
+.inp_comm{
+    cursor: pointer;
+}
+
+.school{
+    float: left;
+    width: 230px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
 .opt_comm {
     display: inline-block;
     overflow: hidden;
