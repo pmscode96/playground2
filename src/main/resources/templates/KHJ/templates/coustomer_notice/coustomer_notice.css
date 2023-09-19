@@ -875,3 +875,8 @@ address, caption, cite, code, dfn, em, strong, var {
     z-index: 1;
     color: #202020;
 }
+
+.txt_tab:hover {
+    color: #000;
+    transition: .2s;
+}

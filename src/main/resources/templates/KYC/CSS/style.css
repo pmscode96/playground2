@@ -74,3 +74,9 @@ dl, li, menu, ol, ul {
   position: relative;
   min-height: 100vh;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

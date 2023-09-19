@@ -17,6 +17,8 @@
   <!-- 하단 스타일 CSS -->
   <link rel="stylesheet" href="../CSS/footer.css">
 
+  <!-- 좋아요 버튼 JS -->
+  <script src="../JS/like-btn.js"></script>
 
 </head>
 <body>
@@ -292,8 +294,45 @@
 
                         </div>
 
+                        <div class="toastui-editor-toolbar2">
+
+                          <div class="toastui-editor-toolbar2-ibx">
+
+                            <div style="min-height: 165px;">
+                              
+                              <textarea class="toastui-editor-pseudo-clipboard"></textarea>
+
+                              <div contenteditable="true" translate="no" class="ProseMirror">
+
+                                <div>
+
+                                  <span class="placeholder ProseMirror-widget" contenteditable="false">마크다운 문법을 활용하여 댓글을 입력해 보세요</span>
+
+                                  <img class="ProseMirror-separator" alt="">
+
+                                  <br class="ProseMirror-trailingBreak">
+
+                                  
+
+                                </div>
+
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
 
                       </div>
+
+                      <footer class="footer2">
+
+                        <button type="submit" width="100" class="css-w5i4wd e66to7m0">등록</button>
+                      
+                      </footer>
 
                     </div>
 
@@ -398,4 +437,30 @@
   </div>
 
 </body>
+<script>
+  // ProseMirror 요소를 가져옵니다.
+  const proseMirror = document.querySelector('.ProseMirror');
+
+  // 입력 이벤트를 처리합니다.
+  proseMirror.addEventListener('input', function() {
+    // 하위 span 태그 가져오기
+    const span = proseMirror.querySelector('.placeholder');
+    
+    // 입력값을 확인하여 ProseMirror-focus 클래스 및 span 태그 스타일을 업데이트
+    const textContent = proseMirror.textContent.trim();
+    if (textContent === '') {
+      proseMirror.classList.remove('ProseMirror-focus');
+      if (span) {
+        span.style.display = 'inline';
+      }
+    } else {
+      proseMirror.classList.add('ProseMirror-focus');
+      if (span) {
+        span.style.display = 'none';
+      }
+    }
+  });
+
+
+</script>
 </html>

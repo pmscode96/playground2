@@ -879,3 +879,8 @@ address, caption, cite, code, dfn, em, strong, var {
     white-space: pre-line;
     vertical-align: top;
 }
+
+.txt_tab:hover {
+    color: #000;
+    transition: .2s;
+}

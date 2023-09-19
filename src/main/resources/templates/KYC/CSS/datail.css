@@ -201,7 +201,7 @@
 
 .Comments-bx {
   background-color: #F9FAFB;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 10rem;
   border-top: 0.0625rem solid #E7E7E7;
 }
 
@@ -389,4 +389,93 @@
   background-color: #f7f9fc;
   border-bottom: 1px solid #ebedf2;
   border-radius: 3px 3px 0 0;
+}
+
+.toastui-editor-toolbar2 {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.toastui-editor-toolbar2-ibx {
+  position: absolute;
+  line-height: 1;
+  color: #222;
+  width: 100%;
+  height: inherit;
+}
+
+.ProseMirror {
+  padding: 18px 25px;
+  color: rgb(38, 55, 71);
+  font-family: Inter, NotoSansKR, "Helvetica Neue", Helvetica, Arial, "맑은 고딕", "malgun gothic", 돋움, Dotum, sans-serif, "Apple Color Emoji", "Noto Color Emoji";
+  font-size: 0.8rem;
+  overflow-y: auto;
+  overflow-X: hidden;
+  height: calc(100% - 36px);
+  line-height: 1.6;
+}
+
+.ProseMirror-widget {
+  color: rgb(178, 192, 204);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.toastui-editor-pseudo-clipboard {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  left: -1000px;
+  top: -1000px;
+  z-index: -1;
+}
+
+img.ProseMirror-separator {
+  display: inline !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.footer2 {
+  padding: 1rem 0 0;
+  text-align: right;
+}
+
+.css-w5i4wd {
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 120, 255);
+  font-size: 1rem;
+  line-height: 150%;
+  box-shadow: none;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.08s ease-in-out 0s, background-color 0.08s ease-in-out 0s, border-color 0.08s ease-in-out 0s, box-shadow 0.08s ease-in-out 0s;
+  width: 100px;
+  padding: 0.6875rem 1.25rem;
+  font-weight: 500;
+}
+
+.selected1 > svg > path{
+  fill: rgb(0, 120, 255);
+}
+
+.selected1 > span {
+  font-family: Inter, "Noto Sans KR", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 1;
+  color: rgb(0, 120, 255);
 }
