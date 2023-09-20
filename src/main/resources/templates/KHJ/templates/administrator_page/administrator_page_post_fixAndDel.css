@@ -14,7 +14,7 @@
 
 html {
     tab-size: 4;
-    font-family: Pretendard,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: Pretendard, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 #_next {
@@ -272,7 +272,7 @@ button, input, optgroup, select, textarea {
 }
 
 .border_black_opacity {
-    border-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, .1);
 }
 
 .mx-\[32px\] {
@@ -281,7 +281,7 @@ button, input, optgroup, select, textarea {
 }
 
 .border_disabled {
-    border-color: rgba(0,0,0,.06);
+    border-color: rgba(0, 0, 0, .06);
 }
 
 .border-solid {
@@ -549,7 +549,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .grid-cols-12 {
-    grid-template-columns: repeat(12,minmax(0,1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .w-desktop-grid {
@@ -593,7 +593,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .border_black_opacity {
-    border-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, .1);
 }
 
 .outline-none {
@@ -674,7 +674,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .disabled\:border_black_opacity:disabled {
-    border-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, .1);
 }
 
 .disabled\:content_disabled:disabled {
@@ -712,7 +712,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 /* 게시글 수정 부분 */
 .grid-cols-15 {
-    grid-template-columns: repeat(15,minmax(0,1fr));
+    grid-template-columns: repeat(15, minmax(0, 1fr));
 }
 
 .col-span-5 {
@@ -776,10 +776,10 @@ textarea {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     overflow: hidden;
     position: relative;
-    visibility: inherit!important;
+    visibility: inherit !important;
 }
 
 .tox {
@@ -787,7 +787,7 @@ textarea {
     box-sizing: content-box;
     color: #222f3e;
     cursor: auto;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -839,7 +839,7 @@ textarea {
 .tox .tox-statusbar {
     align-items: center;
     background-color: #fff;
-    color: rgba(34,47,62,.7);
+    color: rgba(34, 47, 62, .7);
     display: flex;
     flex: 0 0 auto;
     font-size: 14px;
@@ -873,16 +873,16 @@ textarea {
     white-space: nowrap;
 }
 
-.tox:not([dir=rtl]) .tox-statusbar__path>* {
+.tox:not([dir=rtl]) .tox-statusbar__path > * {
     margin-right: 4px;
 }
 
 .tox .tox-statusbar a, .tox .tox-statusbar__path-item, .tox .tox-statusbar__wordcount {
-    color: rgba(34,47,62,.7);
+    color: rgba(34, 47, 62, .7);
     text-decoration: none;
 }
 
-.tox .tox-statusbar__path>* {
+.tox .tox-statusbar__path > * {
     display: inline;
     white-space: nowrap;
 }
@@ -894,7 +894,7 @@ textarea {
 }
 
 .tox .tox-statusbar a, .tox .tox-statusbar__path-item, .tox .tox-statusbar__wordcount {
-    color: rgba(34,47,62,.7);
+    color: rgba(34, 47, 62, .7);
     text-decoration: none;
 }
 
@@ -918,7 +918,7 @@ textarea {
 }
 
 .tox .tox-statusbar__branding svg {
-    fill: rgba(34,47,62,.8);
+    fill: rgba(34, 47, 62, .8);
     height: 1.14em;
     vertical-align: -0.28em;
     width: 3.6em;
@@ -940,7 +940,7 @@ textarea {
 
 .tox .tox-statusbar__resize-handle svg {
     display: block;
-    fill: rgba(34,47,62,.5);
+    fill: rgba(34, 47, 62, .5);
 }
 
 .tox :not(svg):not(rect) {
@@ -983,7 +983,7 @@ textarea {
 .tox:not(.tox-tinymce-inline) .tox-editor-header {
     background-color: #fff;
     border-bottom: none;
-    box-shadow: 0 2px 2px -2px rgba(34,47,62,.1), 0 8px 8px -4px rgba(34,47,62,.07);
+    box-shadow: 0 2px 2px -2px rgba(34, 47, 62, .1), 0 8px 8px -4px rgba(34, 47, 62, .07);
     padding: 4px 0;
 }
 
@@ -1088,10 +1088,11 @@ textarea {
 }
 
 .mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
-    color: rgba(34,47,62,.7);
+    color: rgba(34, 47, 62, .7);
     content: attr(data-mce-placeholder);
     position: absolute;
 }
+
 .steadio-post p {
     color: black;
     font-size: 16px;

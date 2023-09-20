@@ -36,7 +36,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 
-body{
+body {
     line-height: 1;
 }
 
@@ -46,8 +46,7 @@ body{
 /* }*/
 
 
-
-button{
+button {
     appearance: auto;
 
     text-rendering: auto;
@@ -97,7 +96,7 @@ h2 {
 }
 
 
-.wrap_1{
+.wrap_1 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -108,14 +107,15 @@ h2 {
     color: transparent;
 }
 
-.wrap_1_a1{
-    color: transparent;
-}
-.wrap_1_a2{
+.wrap_1_a1 {
     color: transparent;
 }
 
-.header{
+.wrap_1_a2 {
+    color: transparent;
+}
+
+.header {
     top: 0px;
     left: 0px;
     right: 0px;
@@ -128,9 +128,10 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
+
 .header {
-     height: 70px;
- }
+    height: 70px;
+}
 
 .header::before {
     content: "";
@@ -143,11 +144,11 @@ h2 {
     background-color: rgb(238, 238, 238);
 }
 
-.header_div1{
+.header_div1 {
     display: flex;
     justify-content: space-between;
 
-   /*text-align: center;*/
+    /*text-align: center;*/
 
     /*align-items: stretch;*/
 
@@ -165,37 +166,40 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
- .header_div1 {
-     align-items: center;
-     width: 1120px;
-     height: 100%;
-     margin: 0px auto;
- }
 
- .header_div1_h1{
-     width: 115px;
-     height: 70px;
- }
+.header_div1 {
+    align-items: center;
+    width: 1120px;
+    height: 100%;
+    margin: 0px auto;
+}
 
-@media only screen and (min-width: 768px)
- .header_div1_h1 {
-     height: 70px;
- }
-
- .header_div1_h1 a{
-     display: block;
-     /*width: 103px;*/
-     height: 100%;
-     background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center center / contain no-repeat;
- }
+.header_div1_h1 {
+    width: 115px;
+    height: 70px;
+}
 
 @media only screen and (min-width: 768px)
+
+.header_div1_h1 {
+    height: 70px;
+}
+
 .header_div1_h1 a {
-     width: 115px;
-     background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
- }
+    display: block;
+    /*width: 103px;*/
+    height: 100%;
+    background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center center / contain no-repeat;
+}
 
-.header_div1_h1 a span{
+@media only screen and (min-width: 768px)
+
+.header_div1_h1 a {
+    width: 115px;
+    background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
+}
+
+.header_div1_h1 a span {
     overflow: visible;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -206,7 +210,7 @@ h2 {
     color: transparent;
 }
 
-.header_div1_nav{
+.header_div1_nav {
     display: flex;
     align-items: center;
 
@@ -215,13 +219,14 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
-.header_div1_nav {
-     justify-content: center;
-     flex: 1 0 auto;
-     height: 100%;
- }
 
-.header_div1_nav h2{
+.header_div1_nav {
+    justify-content: center;
+    flex: 1 0 auto;
+    height: 100%;
+}
+
+.header_div1_nav h2 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -232,7 +237,7 @@ h2 {
     color: transparent;
 }
 
-.header_div1_nav ul{
+.header_div1_nav ul {
     display: flex;
     align-items: center;
     height: 100%;
@@ -246,7 +251,8 @@ h2 {
     /*margin-inline-end: 0px;*/
     /*padding-inline-start: 40px;*/
 }
-.header_div1_nav ul li{
+
+.header_div1_nav ul li {
     height: 100%;
     border-bottom: 2px solid rgb(57, 57, 57);
     box-sizing: border-box;
@@ -264,11 +270,12 @@ h2 {
 
 
 @media only screen and (min-width: 768px)
-.header_div1_nav ul li {
-     margin: 0px 11px;
- }
 
-.header_div1_nav a{
+.header_div1_nav ul li {
+    margin: 0px 11px;
+}
+
+.header_div1_nav a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -292,6 +299,7 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
+
 .header_div1_nav ul li a {
     color: rgb(32, 32, 32);
 
@@ -299,27 +307,29 @@ h2 {
     font-family: "KakaoBig Bold";
     font-size: 16px;
     color: rgb(68, 68, 68);
- }
+}
 
 @media only screen and (min-width: 768px)
-.header_div1_nav ul li a {
-     padding: 0px 14px;
-     font-family: "KakaoBig Bold";
-     font-size: 16px;
-     color: rgb(68, 68, 68);
- }
 
-.header_div1_1{
+.header_div1_nav ul li a {
+    padding: 0px 14px;
+    font-family: "KakaoBig Bold";
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.header_div1_1 {
     position: relative;
     display: flex;
     align-items: center;
 }
-.header_div1_1 div{
+
+.header_div1_1 div {
     position: relative;
     display: flex;
 }
 
-.header_div1_1 div a{
+.header_div1_1 div a {
     display: flex;
     position: relative;
     width: 24px;
@@ -331,7 +341,7 @@ h2 {
     cursor: pointer;
 }
 
-.header_div1_1 div a span{
+.header_div1_1 div a span {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
@@ -343,6 +353,7 @@ h2 {
     background: url(//t1.kakaocdn.net/together_image/common/avatar/avatar.png) 50% 50% / cover no-repeat;
     cursor: pointer;
 }
+
 .header_div1_1 div a span::after {
     content: "";
     position: absolute;
@@ -352,7 +363,7 @@ h2 {
     background-repeat: no-repeat;
 }
 
-.header_div1_a{
+.header_div1_a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -368,17 +379,18 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
-.header_div1_a {
-     height: auto;
-     margin: 0px 11px 0px 19px;
-     padding: 8px;
- }
 
-.header_div1_a div{
+.header_div1_a {
+    height: auto;
+    margin: 0px 11px 0px 19px;
+    padding: 8px;
+}
+
+.header_div1_a div {
 
 }
 
-.header_div1_a svg{
+.header_div1_a svg {
     vertical-align: top;
     opacity: 1;
     overflow-clip-margin: content-box;
@@ -387,30 +399,31 @@ h2 {
 }
 
 @media only screen and (min-width: 768px)
-.header_div1_a svg {
-     width: 22px;
-     height: 22px;
- }
 
-.header_div1_a svg g{
+.header_div1_a svg {
+    width: 22px;
+    height: 22px;
+}
+
+.header_div1_a svg g {
     fill: rgb(32, 32, 32);
     fill-rule: nonzero;
     transform-origin: 0px 0px;
 }
 
-.header_div1_a .path1{
+.header_div1_a .path1 {
     d: path("M 18 3 c 8.284 0 15 6.716 15 15 c 0 8.284 -6.716 15 -15 15 c -8.284 0 -15 -6.716 -15 -15 C 3 9.716 9.716 3 18 3 Z m 0 3 C 11.373 6 6 11.373 6 18 s 5.373 12 12 12 s 12 -5.373 12 -12 S 24.627 6 18 6 Z");
     transform-origin: 0px 0px;
 
 }
 
-.header_div1_a .path2{
+.header_div1_a .path2 {
     d: path("M 26.94 27.05 a 1.5 1.5 0 0 1 2.007 -0.103 l 0.114 0.103 l 9.434 9.435 a 1.5 1.5 0 0 1 -2.007 2.224 l -0.114 -0.103 l -9.435 -9.434 a 1.5 1.5 0 0 1 0 -2.122 Z");
     transform-origin: 0px 0px;
 
 }
 
-.header_div1_a span{
+.header_div1_a span {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -421,7 +434,7 @@ h2 {
     color: transparent;
 }
 
-.header_div1_button{
+.header_div1_button {
     position: relative;
     box-sizing: border-box;
     display: inline-flex;
@@ -442,7 +455,8 @@ h2 {
     font-size: 12px;
 
 }
-.header_div1_button svg{
+
+.header_div1_button svg {
     width: 18px;
     height: 18px;
     vertical-align: top;
@@ -451,27 +465,30 @@ h2 {
     overflow: hidden;
 
 }
-.header_div1_button svg g{
+
+.header_div1_button svg g {
     transform: translate(2, 5);
     fill: rgb(34, 39, 43);
     fill-rule: evenodd;
     transform-origin: 0px 0px;
 }
-.header_div1_button svg g .rect1{
+
+.header_div1_button svg g .rect1 {
     width: 36;
     height: 3;
     rx: 1.5;
     transform-origin: 0px 0px;
 }
 
-.header_div1_button svg g .rect2{
+.header_div1_button svg g .rect2 {
     y: 14;
     width: 36;
     height: 3;
     rx: 1.5;
     transform-origin: 0px 0px;
 }
-.header_div1_button svg g .rect3{
+
+.header_div1_button svg g .rect3 {
     y: 27;
     width: 36;
     height: 3;
@@ -479,7 +496,7 @@ h2 {
     transform-origin: 0px 0px;
 }
 
-.header_div1_2{
+.header_div1_2 {
     overflow: visible;
     position: fixed;
     inset: 0px;
@@ -497,7 +514,7 @@ h2 {
     animation: 0.6s ease 0s 1 normal none running closeDrawerAnimation;
 }
 
-.header_div1_2 .div1{
+.header_div1_2 .div1 {
     max-width: 300px;
     min-width: 280px;
     padding: 30px;
@@ -511,10 +528,11 @@ h2 {
     transition: transform 300ms ease 0s;
 }
 
-.header_div1_2 .div2{
+.header_div1_2 .div2 {
 
 }
-.header_div1_2 .button1{
+
+.header_div1_2 .button1 {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
@@ -528,7 +546,7 @@ h2 {
     cursor: pointer;
 }
 
-.header_div1_2 .button1 .span1{
+.header_div1_2 .button1 .span1 {
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
@@ -547,7 +565,7 @@ h2 {
     background-repeat: no-repeat;
 }
 
-.header_div1_2 .button1 .span2{
+.header_div1_2 .button1 .span2 {
     display: block;
     overflow: hidden;
     text-align: left;
@@ -555,7 +573,7 @@ h2 {
 
 }
 
-.header_div1_2 .button1 .span2 strong{
+.header_div1_2 .button1 .span2 strong {
     color: rgb(32, 32, 32);
     font-size: 16px;
     font-style: normal;
@@ -567,7 +585,7 @@ h2 {
     font-weight: 600;
 }
 
-.header_div1_2 .ul1{
+.header_div1_2 .ul1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -578,7 +596,8 @@ h2 {
     padding: 0px;
     list-style: none;
 }
-.header_div1_2 .ul1 .ul1_li1{
+
+.header_div1_2 .ul1 .ul1_li1 {
     flex-grow: 1;
     flex-shrink: 0;
     display: list-item;
@@ -587,7 +606,8 @@ h2 {
     line-height: 1.54;
     letter-spacing: -0.1px;
 }
-.header_div1_2 .ul1 .ul1_li1 a{
+
+.header_div1_2 .ul1 .ul1_li1 a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -603,7 +623,7 @@ h2 {
     -webkit-font-smoothing: antialiased;
 }
 
-.header_div1_2 .ul1 .ul1_li1 a i{
+.header_div1_2 .ul1 .ul1_li1 a i {
     display: inline-flex;
     width: 14px;
     height: 14px;
@@ -611,7 +631,7 @@ h2 {
 
 }
 
-.header_div1_2 .ul1 .ul1_li2{
+.header_div1_2 .ul1 .ul1_li2 {
     position: relative;
     flex-grow: 1;
     flex-shrink: 0;
@@ -635,7 +655,7 @@ h2 {
     background-color: rgb(229, 229, 229);
 }
 
-.header_div1_2 .ul1 .ul1_li2 a{
+.header_div1_2 .ul1 .ul1_li2 a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -652,18 +672,18 @@ h2 {
 
 }
 
-.header_div1_2 .ul1 .ul1_li2 a i{
+.header_div1_2 .ul1 .ul1_li2 a i {
     display: inline-flex;
     width: 14px;
     height: 14px;
     background: url(//t1.kakaocdn.net/together_image/svg/ico_side_notice.svg) 50% 50% / contain no-repeat;
 }
 
-.header_div1_2 .nav1{
+.header_div1_2 .nav1 {
     padding-top: 28px;
 }
 
-.header_div1_2 .nav1 h2{
+.header_div1_2 .nav1 h2 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -674,7 +694,7 @@ h2 {
     color: transparent;
 }
 
-.header_div1_2 .nav1 .ul2{
+.header_div1_2 .nav1 .ul2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -684,7 +704,7 @@ h2 {
     padding: 0px;
 }
 
-.header_div1_2 .nav1 .ul2 li{
+.header_div1_2 .nav1 .ul2 li {
     width: 100%;
     display: list-item;
     position: relative;
@@ -692,7 +712,8 @@ h2 {
     line-height: 1.54;
     letter-spacing: -0.1px;
 }
-.header_div1_2 .nav1 .ul2 li a{
+
+.header_div1_2 .nav1 .ul2 li a {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -710,7 +731,7 @@ h2 {
     text-align: center;
 }
 
-.header_div1_2 .nav1 .ul2 li a i{
+.header_div1_2 .nav1 .ul2 li a i {
     display: inline-flex;
     width: 20px;
     height: 20px;
@@ -718,13 +739,14 @@ h2 {
     background: url(//t1.kakaocdn.net/together_image/svg/ico_side_fundraising.svg) 0px 0px / contain no-repeat;
 }
 
-.header_div1_2 .nav1 .ul3{
+.header_div1_2 .nav1 .ul3 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0px 0px;
     margin: 0px -18px;
 }
-.header_div1_2 .nav1 .ul3 li{
+
+.header_div1_2 .nav1 .ul3 li {
     width: calc(50% - 36px);
     margin: 0px 18px;
     display: list-item;
@@ -734,7 +756,7 @@ h2 {
     letter-spacing: -0.1px;
 }
 
-.header_div1_2 .nav1 .ul3 li a{
+.header_div1_2 .nav1 .ul3 li a {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -752,14 +774,14 @@ h2 {
     text-align: center;
 }
 
-.main{
+.main {
     min-height: calc(100vh - 320px);
     background-color: rgb(247, 247, 247);
     box-sizing: border-box;
 
 }
 
-.main h2{
+.main h2 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -770,11 +792,11 @@ h2 {
     color: transparent;
 }
 
-.main .main_div1{
+.main .main_div1 {
 
 }
 
-.main .main_section{
+.main .main_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -783,7 +805,8 @@ h2 {
     padding-top: 49px;
     margin: 0px auto;
 }
-.main .main_section h3{
+
+.main .main_section h3 {
     font-size: 26px;
     line-height: 1.52;
     -webkit-font-smoothing: antialiased;
@@ -795,13 +818,14 @@ h2 {
     font-family: "KakaoBig Bold", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
     overflow-wrap: break-word;
 }
-.main .main_section .main_section_div{
+
+.main .main_section .main_section_div {
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
-.main_section_div1{
+.main_section_div1 {
     gap: 0px 10px;
     padding-bottom: 6px;
     display: inline-flex;
@@ -811,7 +835,7 @@ h2 {
     height: 100%;
 }
 
-.main_section_div1 .i1{
+.main_section_div1 .i1 {
     width: 52px;
     height: 52px;
     display: inline-block;
@@ -823,7 +847,7 @@ h2 {
 
 }
 
-.main_section_div1 .span1{
+.main_section_div1 .span1 {
     height: 52px;
     border-radius: 28px;
     padding-left: 24px;
@@ -850,7 +874,8 @@ h2 {
     line-height: 1.88;
     letter-spacing: -0.1px;
 }
-.main_section_div1 .i2{
+
+.main_section_div1 .i2 {
     width: 94px;
     height: 52px;
     border-radius: 28px;
@@ -864,7 +889,7 @@ h2 {
 
 }
 
-.main_section_div1 .i3{
+.main_section_div1 .i3 {
     width: 52px;
     height: 52px;
     display: inline-block;
@@ -876,7 +901,7 @@ h2 {
 
 }
 
-.main_section_div1 a{
+.main_section_div1 a {
     position: relative;
     height: 100%;
     border-radius: 28px;
@@ -888,7 +913,7 @@ h2 {
 
 }
 
-.main_section_div1 a .span2{
+.main_section_div1 a .span2 {
     height: 52px;
     border-radius: 28px;
     padding-left: 24px;
@@ -915,7 +940,7 @@ h2 {
     letter-spacing: -0.1px;
 }
 
-.main_div2{
+.main_div2 {
     width: 1120px;
     margin-top: 32px;
     padding-bottom: 46px;
@@ -925,12 +950,12 @@ h2 {
 
 }
 
-.main_div2 .main_div2_section1{
+.main_div2 .main_div2_section1 {
     width: 700px;
 
 }
 
-.main_div2 .main_div2_section1 .h4{
+.main_div2 .main_div2_section1 .h4 {
     width: 700px;
     margin-bottom: 30px;
     padding-bottom: 250px;
@@ -947,11 +972,13 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
     text-decoration: none;
 }
-.main_div2 .main_div2_section1 .h4 .span1{
+
+.main_div2 .main_div2_section1 .h4 .span1 {
     padding: 38px 30px;
     display: block;
 }
-.main_div2 .main_div2_section1 .h4 .span2{
+
+.main_div2 .main_div2_section1 .h4 .span2 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -963,7 +990,7 @@ h2 {
 
 }
 
-.main_div2 .main_div2_section1 .h4 a{
+.main_div2 .main_div2_section1 .h4 a {
     display: block;
     position: absolute;
     left: 0px;
@@ -977,10 +1004,11 @@ h2 {
 
 }
 
-.main_div2_section1_div1{
+.main_div2_section1_div1 {
 
 }
-.main_div2_section1_div1 h4{
+
+.main_div2_section1_div1 h4 {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -990,13 +1018,14 @@ h2 {
     margin: -1px;
     color: transparent;
 }
-.main_div2_section1_div1 .div1{
+
+.main_div2_section1_div1 .div1 {
     box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
 }
 
-.main_div2_section1_div1 .div1 .div2{
+.main_div2_section1_div1 .div1 .div2 {
     height: 250px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -1006,7 +1035,7 @@ h2 {
     margin: 0px 0px 20px;
 }
 
-.main_div2_section1_div1 .div1 .div2 a{
+.main_div2_section1_div1 .div1 .div2 a {
     display: flex;
     align-items: center;
     height: 100%;
@@ -1014,7 +1043,7 @@ h2 {
     text-decoration: none;
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d1{
+.main_div2_section1_div1 .div1 .div2 a .d1 {
     width: 250px;
     height: 100%;
     border-radius: 12px 0px 0px 12px;
@@ -1028,7 +1057,7 @@ h2 {
     background: url(../static/고민img최종.gif) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2{
+.main_div2_section1_div1 .div1 .div2 a .d2 {
     padding: 0px 30px;
     margin-top: -8px;
     overflow: visible;
@@ -1042,7 +1071,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2 strong{
+.main_div2_section1_div1 .div1 .div2 a .d2 strong {
     order: 2;
     padding-top: 3px;
     font-family: "KakaoBig Bold";
@@ -1062,7 +1091,8 @@ h2 {
     line-height: 1.56;
 
 }
-.main_div2_section1_div1 .div1 .div2 a .d2 .span0{
+
+.main_div2_section1_div1 .div1 .div2 a .d2 .span0 {
     order: 3;
     margin-top: 11px;
     line-height: 23px;
@@ -1091,13 +1121,13 @@ h2 {
     /*line-height: 1.5;*/
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2 div{
+.main_div2_section1_div1 .div1 .div2 a .d2 div {
     order: 4;
     padding-top: 16px;
     margin-top: auto;
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2 button{
+.main_div2_section1_div1 .div1 .div2 a .d2 button {
     order: 1;
     padding: 10px 0px 0px;
     background-color: transparent;
@@ -1126,7 +1156,7 @@ h2 {
     font-size: 12px;
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2 button .span1{
+.main_div2_section1_div1 .div1 .div2 a .d2 button .span1 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;
@@ -1144,7 +1174,7 @@ h2 {
     padding-right: 2px;
 }
 
-.main_div2_section1_div1 .div1 .div2 a .d2 button .span2{
+.main_div2_section1_div1 .div1 .div2 a .d2 button .span2 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;
@@ -1164,29 +1194,7 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main_div2_section1_div1 .div1 .div3{
+.main_div2_section1_div1 .div1 .div3 {
     height: 250px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -1196,7 +1204,7 @@ h2 {
     margin: 0px 0px 20px;
 }
 
-.main_div2_section1_div1 .div1 .div3 a{
+.main_div2_section1_div1 .div1 .div3 a {
     display: flex;
     align-items: center;
     height: 100%;
@@ -1204,7 +1212,7 @@ h2 {
     text-decoration: none;
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d1{
+.main_div2_section1_div1 .div1 .div3 a .d1 {
     width: 250px;
     height: 100%;
     border-radius: 12px 0px 0px 12px;
@@ -1218,7 +1226,7 @@ h2 {
     background: url(../static/고민img최종.gif) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2{
+.main_div2_section1_div1 .div1 .div3 a .d2 {
     padding: 0px 30px;
     margin-top: -8px;
     overflow: visible;
@@ -1232,7 +1240,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2 strong{
+.main_div2_section1_div1 .div1 .div3 a .d2 strong {
     order: 2;
     padding-top: 3px;
     font-family: "KakaoBig Bold";
@@ -1252,7 +1260,8 @@ h2 {
     line-height: 1.56;
 
 }
-.main_div2_section1_div1 .div1 .div3 a .d2 .span0{
+
+.main_div2_section1_div1 .div1 .div3 a .d2 .span0 {
     order: 3;
     margin-top: 11px;
     line-height: 23px;
@@ -1281,13 +1290,13 @@ h2 {
     /*line-height: 1.5;*/
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2 div{
+.main_div2_section1_div1 .div1 .div3 a .d2 div {
     order: 4;
     padding-top: 16px;
     margin-top: auto;
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2 button{
+.main_div2_section1_div1 .div1 .div3 a .d2 button {
     order: 1;
     padding: 10px 0px 0px;
     background-color: transparent;
@@ -1316,7 +1325,7 @@ h2 {
     font-size: 12px;
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2 button .span1{
+.main_div2_section1_div1 .div1 .div3 a .d2 button .span1 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;
@@ -1334,7 +1343,7 @@ h2 {
     padding-right: 2px;
 }
 
-.main_div2_section1_div1 .div1 .div3 a .d2 button .span2{
+.main_div2_section1_div1 .div1 .div3 a .d2 button .span2 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;
@@ -1354,19 +1363,7 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.main_div2_section1_div1 .div1 .div4{
+.main_div2_section1_div1 .div1 .div4 {
     height: 250px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -1376,7 +1373,7 @@ h2 {
     margin: 0px 0px 20px;
 }
 
-.main_div2_section1_div1 .div1 .div4 a{
+.main_div2_section1_div1 .div1 .div4 a {
     display: flex;
     align-items: center;
     height: 100%;
@@ -1384,7 +1381,7 @@ h2 {
     text-decoration: none;
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d1{
+.main_div2_section1_div1 .div1 .div4 a .d1 {
     width: 250px;
     height: 100%;
     border-radius: 12px 0px 0px 12px;
@@ -1398,7 +1395,7 @@ h2 {
     background: url(../static/고민img최종.gif) 50% 50% / cover no-repeat, url(https://t1.kakaocdn.net/together_image/common/no_image.png);
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2{
+.main_div2_section1_div1 .div1 .div4 a .d2 {
     padding: 0px 30px;
     margin-top: -8px;
     overflow: visible;
@@ -1412,7 +1409,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2 strong{
+.main_div2_section1_div1 .div1 .div4 a .d2 strong {
     order: 2;
     padding-top: 3px;
     font-family: "KakaoBig Bold";
@@ -1432,7 +1429,8 @@ h2 {
     line-height: 1.56;
 
 }
-.main_div2_section1_div1 .div1 .div4 a .d2 .span0{
+
+.main_div2_section1_div1 .div1 .div4 a .d2 .span0 {
     order: 3;
     margin-top: 11px;
     line-height: 23px;
@@ -1461,13 +1459,13 @@ h2 {
     /*line-height: 1.5;*/
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2 div{
+.main_div2_section1_div1 .div1 .div4 a .d2 div {
     order: 4;
     padding-top: 16px;
     margin-top: auto;
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2 button{
+.main_div2_section1_div1 .div1 .div4 a .d2 button {
     order: 1;
     padding: 10px 0px 0px;
     background-color: transparent;
@@ -1496,7 +1494,7 @@ h2 {
     font-size: 12px;
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2 button .span1{
+.main_div2_section1_div1 .div1 .div4 a .d2 button .span1 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;
@@ -1514,7 +1512,7 @@ h2 {
     padding-right: 2px;
 }
 
-.main_div2_section1_div1 .div1 .div4 a .d2 button .span2{
+.main_div2_section1_div1 .div1 .div4 a .d2 button .span2 {
     color: rgb(153, 153, 153);
     font-family: "KakaoBig Bold";
     font-size: 13px;

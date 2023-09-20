@@ -1,14 +1,14 @@
-element.style{
+element.style {
     overflow: auto;
 }
 
-@media only screen and (min-width: 768px){
-body{
-    min-width: 1140px;
-}
+@media only screen and (min-width: 768px) {
+    body {
+        min-width: 1140px;
+    }
 }
 
-body{
+body {
     font-family: "KakaoBig Regular", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
     line-height: 1;
     margin: 0px;
@@ -18,11 +18,11 @@ body{
     display: block;
 }
 
-body{
+body {
     vertical-align: baseline;
 }
 
-.two{
+.two {
     overflow: hidden;
     position: absolute;
     clip: rect(0px, 0px, 0px, 0px);
@@ -33,26 +33,26 @@ body{
     color: transparent;
 }
 
-div{
+div {
     display: block;
 }
 
-div{
+div {
     margin: 0px;
     padding: 0px;
     border: 0px;
     font: inherit;
 }
 
-div{
+div {
     vertical-align: baseline;
 }
 
-.menu{
+.menu {
     color: transparent;
 }
 
-a{
+a {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -65,13 +65,13 @@ a::-webkit-any-link {
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px){
-.nav-two {
-    height: 70px;
-}
+@media only screen and (min-width: 768px) {
+    .nav-two {
+        height: 70px;
+    }
 }
 
-.nav-two{
+.nav-two {
     top: 0px;
     left: 0px;
     right: 0px;
@@ -81,11 +81,11 @@ a::-webkit-any-link {
     position: sticky;
 }
 
-header{
+header {
     display: block;
 }
 
-header{
+header {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -93,7 +93,7 @@ header{
     vertical-align: baseline;
 }
 
-.nav-two::before{
+.nav-two::before {
     content: "";
     display: block;
     position: absolute;
@@ -104,28 +104,28 @@ header{
     background-color: rgb(238, 238, 238);
 }
 
-@media only screen and (min-width: 768px){
-.bar-two {
-    align-items: center;
-    width: 1120px;
-    height: 100%;
-    margin: 0px auto;
-}
+@media only screen and (min-width: 768px) {
+    .bar-two {
+        align-items: center;
+        width: 1120px;
+        height: 100%;
+        margin: 0px auto;
+    }
 }
 
-.bar-two{
+.bar-two {
     display: flex;
     justify-content: space-between;
     min-width: 280px;
 }
 
-@media only screen and (min-width: 768px){
-.gachi {
-    height: 70px;
-}
+@media only screen and (min-width: 768px) {
+    .gachi {
+        height: 70px;
+    }
 }
 
-h1{
+h1 {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -133,7 +133,7 @@ h1{
     vertical-align: baseline;
 }
 
-h1{
+h1 {
     display: block;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -141,20 +141,20 @@ h1{
     margin-inline-end: 0px;
 }
 
-@media only screen and (min-width: 768px){
-.small {
-    width: 115px;
-    background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
-}
+@media only screen and (min-width: 768px) {
+    .small {
+        width: 115px;
+        background-image: url(//t1.kakaocdn.net/together_image/svg/logo_pc.svg);
+    }
 }
 
-.small{
+.small {
     display: block;
     height: 100%;
     background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center center / contain no-repeat;
 }
 
-span{
+span {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -162,20 +162,20 @@ span{
     vertical-align: baseline;
 }
 
-@media only screen and (min-width: 768px){
-.mai-and {
-    justify-content: center;
-    flex: 1 0 auto;
-    height: 100%;
-}
+@media only screen and (min-width: 768px) {
+    .mai-and {
+        justify-content: center;
+        flex: 1 0 auto;
+        height: 100%;
+    }
 }
 
-.mai-and{
+.mai-and {
     display: flex;
     align-items: center;
 }
 
-nav{
+nav {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -183,14 +183,14 @@ nav{
     vertical-align: baseline;
 }
 
-h2{
+h2 {
     padding: 0px;
     border: 0px;
     font: inherit;
     vertical-align: baseline;
 }
 
-h2{
+h2 {
     display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -204,22 +204,22 @@ h2{
     height: 100%;
 }
 
-.list-one{
+.list-one {
     margin: 0px;
     padding: 0px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-ul{
+ul {
     border: 0px;
     font: inherit;
     vertical-align: baseline;
 }
 
-ul{
+ul {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -227,19 +227,19 @@ ul{
     padding-inline-start: 40px;
 }
 
-@media only screen and (min-width: 768px){
-.menu-four {
-    margin: 0px 11px;
-}
+@media only screen and (min-width: 768px) {
+    .menu-four {
+        margin: 0px 11px;
+    }
 }
 
-.menu-four{
+.menu-four {
     height: 100%;
     border-bottom: 2px solid transparent;
     box-sizing: border-box;
 }
 
-.menu-two{
+.menu-two {
     display: list-item;
     position: relative;
     font-size: 13px;
@@ -247,31 +247,31 @@ ul{
     letter-spacing: -0.1px;
 }
 
-li{
+li {
     padding: 0px;
     border: 0px;
     font: inherit;
     vertical-align: baseline;
 }
 
-li{
-    text-align:-webkit-match-parent;
+li {
+    text-align: -webkit-match-parent;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-@media only screen and (min-width: 768px){
-.h-six{
-    padding: 0px 14px;
-    font-family: "KakaoBig Bold";
-    font-size: 16px;
-    color: rgb(68, 68, 68);
-}
+@media only screen and (min-width: 768px) {
+    .h-six {
+        padding: 0px 14px;
+        font-family: "KakaoBig Bold";
+        font-size: 16px;
+        color: rgb(68, 68, 68);
+    }
 }
 
-.h-six{
+.h-six {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -282,62 +282,62 @@ ul{
     text-decoration: none;
 }
 
-.h-five{
+.h-five {
     font-style: normal;
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
 }
 
-@media only screen and (min-width: 768px){
-.menu-five{
-    margin: 0px 11px;
-}
+@media only screen and (min-width: 768px) {
+    .menu-five {
+        margin: 0px 11px;
+    }
 }
 
-.menu-five{
+.menu-five {
     height: 100%;
     border-bottom: 2px solid rgb(57, 57, 57);
     box-sizing: border-box;
 }
 
-.util-two{
+.util-two {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.uall{
+.uall {
     position: relative;
     display: flex;
 }
 
-.hyp-two{
+.hyp-two {
     vertical-align: top;
     font: inherit;
     text-decoration: none;
     color: inherit;
 }
 
-.hyp-five{
+.hyp-five {
     display: flex;
     position: relative;
     width: 24px;
     height: 24px;
 }
 
-@media only screen and (min-width: 768px){
-.menu-five, .h-seven {
-    color: rgb(32, 32, 32);
-}
+@media only screen and (min-width: 768px) {
+    .menu-five, .h-seven {
+        color: rgb(32, 32, 32);
+    }
 }
 
-.ava-four{
+.ava-four {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
 }
 
-.ava-three{
+.ava-three {
     overflow: hidden;
     position: relative;
     background: url(//t1.kakaocdn.net/together_image/common/avatar/avatar.png) 50% 50% / cover no-repeat;
@@ -353,29 +353,29 @@ ul{
     background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 768px){
-.search-two {
-    height: auto;
-    margin: 0px 11px 0px 19px;
-    padding: 8px;
-}
+@media only screen and (min-width: 768px) {
+    .search-two {
+        height: auto;
+        margin: 0px 11px 0px 19px;
+        padding: 8px;
+    }
 }
 
-.search-two{
+.search-two {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 768px){
-.svg-four {
-    width: 22px;
-    height: 22px;
-}
+@media only screen and (min-width: 768px) {
+    .svg-four {
+        width: 22px;
+        height: 22px;
+    }
 }
 
-.svg-tw{
+.svg-tw {
     vertical-align: top;
 }
 
@@ -388,11 +388,11 @@ svg:not(:root) {
     transform-origin: 0px 0px;
 }
 
-.trans-five{
+.trans-five {
     position: relative;
 }
 
-.trans{
+.trans {
     box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
@@ -412,7 +412,7 @@ svg:not(:root) {
     font-size: 12px;
 }
 
-button{
+button {
     appearance: auto;
     text-rendering: auto;
     word-spacing: normal;
@@ -425,7 +425,7 @@ button{
     padding-inline: 6px;
 }
 
-.liTurH{
+.liTurH {
     width: 18px;
     height: 18px;
     vertical-align: top;

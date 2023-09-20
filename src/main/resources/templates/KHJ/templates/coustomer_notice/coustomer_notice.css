@@ -31,7 +31,7 @@ body, html {
 body, button, input, select, td, textarea, th {
     font-size: 14px;
     line-height: 1.5;
-    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
+    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
     color: #444;
 }
 
@@ -138,6 +138,7 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
     flex: 1 0 auto;
     height: 100%;
 }
+
 .screen_out {
     overflow: hidden;
     position: absolute;
@@ -154,7 +155,7 @@ blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4,
     margin: 0 11px;
     padding: 22px 14px;
     font-size: 16px;
-    font-family: KakaoBig Bold,sans-serif;
+    font-family: KakaoBig Bold, sans-serif;
     color: #444;
 }
 
@@ -291,7 +292,7 @@ fieldset, img {
 }
 
 [hidden] {
-    display: none!important;
+    display: none !important;
 }
 
 .side_together {
@@ -601,11 +602,11 @@ dl, li, menu, ol, ul {
     box-sizing: border-box;
 }
 
-.wrap_tab .list_tab li+li {
+.wrap_tab .list_tab li + li {
     position: relative;
 }
 
-.wrap_tab .list_tab li+li::before {
+.wrap_tab .list_tab li + li::before {
     content: "";
     display: block;
     position: absolute;
