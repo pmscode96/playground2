@@ -471,6 +471,10 @@ img.ProseMirror-separator {
   fill: rgb(0, 120, 255);
 }
 
+.selected1 path{
+  fill: rgb(0, 120, 255);
+}
+
 .selected1 > span {
   font-family: Inter, "Noto Sans KR", sans-serif;
   font-size: 0.875rem;
@@ -478,4 +482,27 @@ img.ProseMirror-separator {
   line-height: 160%;
   opacity: 1;
   color: rgb(0, 120, 255);
+}
+
+.question-file-bx {
+  margin-bottom: 12px;
+}
+
+.question-file {
+  width: 780px;
+  height: 40px;
+  border: 0.0625rem solid #aeaeae;
+  border-radius: 10px;
+  display: flex;
+}
+
+.file-download {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question-file-bx .question-file+.question-file {
+  margin-top: 8px;
 }
