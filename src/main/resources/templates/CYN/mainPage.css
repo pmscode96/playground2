@@ -3047,7 +3047,7 @@ h4 {
     background-color: rgb(255, 255, 255);
 
     position: sticky;
-    top: 70px;
+    top: 90px;
     left: 0;
     right: 0;
 
@@ -3192,14 +3192,15 @@ h4 {
 .main_div2_section2 .div1 .div5 .d2{
     cursor: pointer;
 
-    overflow: scroll;
+    /*overflow: scroll;*/
+
 }
 .main_div2_section2 .div1 .div5 .d2 .d2_1{
     position: relative;
 
     text-overflow: ellipsis;
     /*text-overflow:clip;*/
-    /*overflow:hidden;*/
+    overflow:hidden;
     word-break:break-all;
     /*white-space: nowrap;*/
 
