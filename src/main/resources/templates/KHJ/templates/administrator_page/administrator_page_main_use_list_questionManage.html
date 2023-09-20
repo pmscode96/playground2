@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/css/87e703a61c4a1915.css" data-n-g="">
     <link rel="stylesheet" type="text/css" id="mce-u0" crossorigin="anonymous" referrerpolicy="origin" href="https://cdn.tiny.cloud/1/642kloaxprkdiwotc62kpdppm5zm6xgx1sut3sma8h87w63g/tinymce/6.6.2-27/skins/ui/oxide/skin.min.css">
     <link rel="preload" as="image" imagesrcset="/_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=3840&amp;q=75 3840w" imagesizes="100vw">
-    <link rel="stylesheet" href="administrator_page_main_use_list_userManage.css">
+    <link rel="stylesheet" href="administrator_page_main_use_list_questionManage.css">
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/framework-560765ab0625ba27.js" defer=""></script>
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/main-f82cef7d6a5937df.js" defer=""></script>
     <style>
@@ -297,8 +297,8 @@
                                 </div>
                             </div>
                             <!--                            학교 목록-->
-                            <div>
-                                <ul class="pt-[4px]">
+                            <div id="delete_div1">
+                                <ul id="delete_ul1" class="pt-[4px]">
 <!--                                    리스트 없을 때-->
 <!--                                    <div class="mt-[100px] flex flex-col justify-center items-center">-->
 <!--                                        <svg width="154" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -321,10 +321,10 @@
 <!--                                        </svg>-->
 <!--                                        <p class="mt-[23px] font_body_regular_lg content_quaternary">문의 글이 없습니다.</p>-->
 <!--                                    </div>-->
-
+<!--#delete_div1 #delete_ul1 #li #delete_div2 #button-->
 <!--                                    리스트 존재 할 때-->
-                                    <li class="px-[8px] py-[10px] flex items-center border-b border_secondary hover:surface_secondary">
-                                        <div class="flex items-center gap-x-[24px]">
+                                    <li id="li" class="px-[8px] py-[10px] flex items-center border-b border_secondary hover:surface_secondary">
+                                        <div id="delete_div2" class="flex items-center gap-x-[24px]">
                                             <!--                                                구분-->
                                             <p class="content_secondary font_label_regular_lg text-ellipsis overflow-hidden whitespace-nowrap w-[78px]" style="padding-left: 28px">학생</p>
                                             <!--                                                제목-->
@@ -336,7 +336,7 @@
                                             <p class="content_secondary font_label_regular_lg text-left w-[85px]">홍길동</p>
                                             <!--                                                삭제-->
                                             <div>
-                                                <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="right: 17px">
+                                                <button id="button" type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="right: 17px">
                                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[16px] h-[16px] content_primary">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm3.636-13.636a.9.9 0 0 1 0 1.272L13.273 12l2.363 2.364a.9.9 0 1 1-1.273 1.272L12 13.273l-2.364 2.363a.9.9 0 0 1-1.273-1.272L10.727 12 8.363 9.636a.9.9 0 0 1 1.273-1.272L12 10.727l2.363-2.363a.9.9 0 0 1 1.273 0Z"></path>
                                                     </svg>
@@ -349,8 +349,140 @@
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
+
+
+
+
+
+        <!--        삭제 클릭 시-->
+        <div class="mo">
+            <div id="modal" class="z-0">
+                <div class="z-[9999] fixed top-1/2 left-1/2 -translate-x-1/2
+                      -translate-y-1/2 overflow-x-hidden
+                      mobile:w-max mobile:h-auto
+                      border border_primary mobile:rounded-[16px]
+                      shadow-s surface_primary overflow-y-auto
+                      mobile:overflow-hidden mobile:justify-center
+                      flex flex-col items-center
+                      px-[24px] rounded-2xl" id="modal_extra">
+<!--                    .mo #delete_div #delete_button-->
+                    <div class="w-full py-[28px] px-[4px] md:py-[32px] md:px-[8px]">
+                        <div id="delete_div" class="relative">
+                            <h4 style="font-family: 'KakaoBig Bold'" class="font_headline_bold_md content_primary mb-[24px]
+                            flex justify-center">삭제하기</h4>
+                            <div id="delete_button" class="absolute right-0 top-0">
+                                <button type="button" class="flex items-center justify-center w-[32px] h-[32px] rounded-[50%] surface_tertiary">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mobile:w-[20px] mobile:h-[20px] mobile:content_primary">
+                                        <path d="M5.707 5.707a1 1 0 0 0 0 1.414l4.95 4.95-4.95 4.95a1 1 0 1 0 1.414 1.414l4.95-4.95 4.95 4.95a1 1 0 0 0 1.414-1.414l-4.95-4.95 4.95-4.95a1 1 0 1 0-1.414-1.414l-4.95 4.95-4.95-4.95a1 1 0 0 0-1.414 0Z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div style="height: 4px;"></div>
+                        <div id="de_div1" class="px-[12px] md:px-[28px]">
+                            <div class="font_body_regular_lg content_secondary">
+                                <button id="delete_b1" type="button" class="btn btn-primary">삭제하기</button>
+                                <button id="delete_b2" type="button" class="btn btn-secondary" data-dismiss="modal">취소하기</button>
+<!--                                <div class="flex justify-between gap-[24px]">-->
+<!--                                    <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                        <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                            <g clip-path="url(#Twitter_svg__a)">-->
+<!--                                                <path d="M44.639 26.058c.019.28.019.562.019.846 0 8.647-6.555 18.62-18.54 18.62v-.006a18.39 18.39 0 0 1-9.99-2.933 13.05 13.05 0 0 0 9.644-2.712 6.528 6.528 0 0 1-6.087-4.545 6.47 6.47 0 0 0 2.942-.113 6.538 6.538 0 0 1-5.227-6.414v-.083c.906.507 1.92.788 2.957.819-2.863-1.922-3.745-5.747-2.017-8.738a18.468 18.468 0 0 0 13.43 6.837 6.566 6.566 0 0 1 1.885-6.252 6.504 6.504 0 0 1 9.22.284 13.044 13.044 0 0 0 4.138-1.59 6.564 6.564 0 0 1-2.865 3.62c1.292-.153 2.554-.5 3.742-1.03a13.269 13.269 0 0 1-3.251 3.39Z" fill="#1D9BF0"></path>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="Twitter_svg__a">-->
+<!--                                                    <path fill="#fff" transform="translate(16 19.412)" d="M0 0h32v26.435H0z"></path>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>트위터-->
+<!--                                    </button>-->
+<!--                                    <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                        <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                            <path d="M31.762 16.762c-9.126 0-16.524 5.833-16.524 13.028 0 4.652 3.093 8.734 7.745 11.039-.253.873-1.626 5.615-1.68 5.988 0 0-.034.28.148.387.181.106.394.023.394.023.52-.072 6.029-3.941 6.982-4.613.953.134 1.933.205 2.935.205 9.126 0 16.524-5.833 16.524-13.029 0-7.195-7.398-13.028-16.524-13.028Z" fill="#3B1F1E"></path>-->
+<!--                                            <path d="M22.626 34.339c-.526 0-.953-.409-.953-.91v-5.664h-1.487a.936.936 0 0 1-.936-.934c0-.514.42-.933.936-.933h4.881c.516 0 .936.419.936.933 0 .515-.42.934-.936.934H23.58v5.663c0 .502-.428.91-.954.91Zm8.36-.013c-.398 0-.702-.161-.794-.42l-.472-1.237h-2.907l-.472 1.237c-.092.259-.396.42-.793.42-.21 0-.416-.044-.606-.131-.263-.122-.515-.455-.226-1.354l2.28-6.002c.161-.456.649-.927 1.27-.94.623.013 1.11.483 1.271.941l2.28 6c.29.9.037 1.234-.226 1.355-.19.087-.396.131-.606.131Zm-1.767-3.345-.952-2.705-.953 2.705h1.905ZM33.35 34.2c-.504 0-.914-.393-.914-.874V26.85c0-.525.437-.953.973-.953.537 0 .974.428.974.953v5.6h2.025c.504 0 .914.393.914.875 0 .481-.41.874-.914.874h-3.058Zm5.296.126a.954.954 0 0 1-.953-.953V26.85a.954.954 0 0 1 1.906 0v2.05l2.66-2.66a.74.74 0 0 1 .529-.213.94.94 0 0 1 .656.282.94.94 0 0 1 .28.604.743.743 0 0 1-.21.58l-2.173 2.173 2.347 3.108a.946.946 0 0 1 .183.707.947.947 0 0 1-.37.628.943.943 0 0 1-.573.193.945.945 0 0 1-.762-.38l-2.236-2.961-.33.33v2.08a.955.955 0 0 1-.954.954Z" fill="#FFE812"></path>-->
+<!--                                        </svg>카카오톡-->
+<!--                                    </button>-->
+<!--                                    <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                        <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                            <path d="M27.23 29.065a1.038 1.038 0 0 0-1.468 0l-2.935 2.936A6.486 6.486 0 1 0 32 41.174l2.936-2.935a1.038 1.038 0 1 0-1.468-1.468l-2.936 2.935a4.41 4.41 0 0 1-6.237-6.238l2.935-2.935a1.038 1.038 0 0 0 0-1.468ZM36.77 34.936a1.038 1.038 0 0 1 0-1.468l2.936-2.935a4.41 4.41 0 0 0-6.238-6.238l-2.936 2.936a1.038 1.038 0 1 1-1.467-1.468L32 22.827a6.487 6.487 0 0 1 9.173 9.174l-2.935 2.935a1.038 1.038 0 0 1-1.468 0Z" fill="#666667"></path>-->
+<!--                                            <path d="M28.293 35.892a1.038 1.038 0 0 1 0-1.468l6.626-6.626a1.038 1.038 0 1 1 1.468 1.467l-6.627 6.627a1.038 1.038 0 0 1-1.468 0Z" fill="#666667"></path>-->
+<!--                                        </svg>링크 복사-->
+<!--                                    </button>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-10 fixed mobile:block top-0 left-0 w-full h-full dimmed_40"></div>
+            </div>
+        </div>
+<!--        <div id="modal" class="z-0">-->
+<!--            <div class="z-[9999] fixed top-1/2 left-1/2 -translate-x-1/2-->
+<!--                      -translate-y-1/2 overflow-x-hidden-->
+<!--                      mobile:w-max mobile:h-auto-->
+<!--                      border border_primary mobile:rounded-[16px]-->
+<!--                      shadow-s surface_primary overflow-y-auto-->
+<!--                      mobile:overflow-hidden mobile:justify-center-->
+<!--                      flex flex-col items-center-->
+<!--                      px-[24px] rounded-2xl">-->
+<!--                <div class="w-full py-[28px] px-[4px] md:py-[32px] md:px-[8px]">-->
+<!--                    <div class="relative">-->
+<!--                        <h4 class="font_headline_bold_md content_primary mb-[24px]-->
+<!--                            flex justify-center">공유하기</h4>-->
+<!--                        <div class="absolute right-0 top-0">-->
+<!--                            <button type="button" class="flex items-center justify-center w-[32px] h-[32px] rounded-[50%] surface_tertiary">-->
+<!--                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mobile:w-[20px] mobile:h-[20px] mobile:content_primary">-->
+<!--                                    <path d="M5.707 5.707a1 1 0 0 0 0 1.414l4.95 4.95-4.95 4.95a1 1 0 1 0 1.414 1.414l4.95-4.95 4.95 4.95a1 1 0 0 0 1.414-1.414l-4.95-4.95 4.95-4.95a1 1 0 1 0-1.414-1.414l-4.95 4.95-4.95-4.95a1 1 0 0 0-1.414 0Z"></path>-->
+<!--                                </svg>-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div style="height: 4px;"></div>-->
+<!--                    <div class="px-[12px] md:px-[28px]">-->
+<!--                        <div class="font_body_regular_lg content_secondary">-->
+<!--                            <div class="flex justify-between gap-[24px]">-->
+<!--                                <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                    <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                        <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                        <g clip-path="url(#Twitter_svg__a)">-->
+<!--                                            <path d="M44.639 26.058c.019.28.019.562.019.846 0 8.647-6.555 18.62-18.54 18.62v-.006a18.39 18.39 0 0 1-9.99-2.933 13.05 13.05 0 0 0 9.644-2.712 6.528 6.528 0 0 1-6.087-4.545 6.47 6.47 0 0 0 2.942-.113 6.538 6.538 0 0 1-5.227-6.414v-.083c.906.507 1.92.788 2.957.819-2.863-1.922-3.745-5.747-2.017-8.738a18.468 18.468 0 0 0 13.43 6.837 6.566 6.566 0 0 1 1.885-6.252 6.504 6.504 0 0 1 9.22.284 13.044 13.044 0 0 0 4.138-1.59 6.564 6.564 0 0 1-2.865 3.62c1.292-.153 2.554-.5 3.742-1.03a13.269 13.269 0 0 1-3.251 3.39Z" fill="#1D9BF0"></path>-->
+<!--                                        </g>-->
+<!--                                        <defs>-->
+<!--                                            <clipPath id="Twitter_svg__a">-->
+<!--                                                <path fill="#fff" transform="translate(16 19.412)" d="M0 0h32v26.435H0z"></path>-->
+<!--                                            </clipPath>-->
+<!--                                        </defs>-->
+<!--                                    </svg>트위터-->
+<!--                                </button>-->
+<!--                                <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                    <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                        <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                        <path d="M31.762 16.762c-9.126 0-16.524 5.833-16.524 13.028 0 4.652 3.093 8.734 7.745 11.039-.253.873-1.626 5.615-1.68 5.988 0 0-.034.28.148.387.181.106.394.023.394.023.52-.072 6.029-3.941 6.982-4.613.953.134 1.933.205 2.935.205 9.126 0 16.524-5.833 16.524-13.029 0-7.195-7.398-13.028-16.524-13.028Z" fill="#3B1F1E"></path>-->
+<!--                                        <path d="M22.626 34.339c-.526 0-.953-.409-.953-.91v-5.664h-1.487a.936.936 0 0 1-.936-.934c0-.514.42-.933.936-.933h4.881c.516 0 .936.419.936.933 0 .515-.42.934-.936.934H23.58v5.663c0 .502-.428.91-.954.91Zm8.36-.013c-.398 0-.702-.161-.794-.42l-.472-1.237h-2.907l-.472 1.237c-.092.259-.396.42-.793.42-.21 0-.416-.044-.606-.131-.263-.122-.515-.455-.226-1.354l2.28-6.002c.161-.456.649-.927 1.27-.94.623.013 1.11.483 1.271.941l2.28 6c.29.9.037 1.234-.226 1.355-.19.087-.396.131-.606.131Zm-1.767-3.345-.952-2.705-.953 2.705h1.905ZM33.35 34.2c-.504 0-.914-.393-.914-.874V26.85c0-.525.437-.953.973-.953.537 0 .974.428.974.953v5.6h2.025c.504 0 .914.393.914.875 0 .481-.41.874-.914.874h-3.058Zm5.296.126a.954.954 0 0 1-.953-.953V26.85a.954.954 0 0 1 1.906 0v2.05l2.66-2.66a.74.74 0 0 1 .529-.213.94.94 0 0 1 .656.282.94.94 0 0 1 .28.604.743.743 0 0 1-.21.58l-2.173 2.173 2.347 3.108a.946.946 0 0 1 .183.707.947.947 0 0 1-.37.628.943.943 0 0 1-.573.193.945.945 0 0 1-.762-.38l-2.236-2.961-.33.33v2.08a.955.955 0 0 1-.954.954Z" fill="#FFE812"></path>-->
+<!--                                    </svg>카카오톡-->
+<!--                                </button>-->
+<!--                                <button class="flex flex-col gap-[8px] items-center font_label_medium_md content_tertiary">-->
+<!--                                    <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                        <circle cx="32" cy="32" r="31.5" stroke="#E6E6E7"></circle>-->
+<!--                                        <path d="M27.23 29.065a1.038 1.038 0 0 0-1.468 0l-2.935 2.936A6.486 6.486 0 1 0 32 41.174l2.936-2.935a1.038 1.038 0 1 0-1.468-1.468l-2.936 2.935a4.41 4.41 0 0 1-6.237-6.238l2.935-2.935a1.038 1.038 0 0 0 0-1.468ZM36.77 34.936a1.038 1.038 0 0 1 0-1.468l2.936-2.935a4.41 4.41 0 0 0-6.238-6.238l-2.936 2.936a1.038 1.038 0 1 1-1.467-1.468L32 22.827a6.487 6.487 0 0 1 9.173 9.174l-2.935 2.935a1.038 1.038 0 0 1-1.468 0Z" fill="#666667"></path>-->
+<!--                                        <path d="M28.293 35.892a1.038 1.038 0 0 1 0-1.468l6.626-6.626a1.038 1.038 0 1 1 1.468 1.467l-6.627 6.627a1.038 1.038 0 0 1-1.468 0Z" fill="#666667"></path>-->
+<!--                                    </svg>링크 복사-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="z-10 fixed mobile:block top-0 left-0 w-full h-full dimmed_40"></div>-->
+<!--        </div>-->
     </div>
 </body>
 <script>
@@ -502,5 +634,48 @@
         }else{
         }
     })
+
+
+
+    const del = document.querySelector("#delete_div1 #delete_ul1 #li #delete_div2 #button");
+    const modal = document.querySelector(".h-full .mo");
+    del.addEventListener("click", (e) => {
+        modal.style.display = 'block';
+    })
+
+
+
+    const deleteex = document.querySelector(".mo #delete_div #delete_button");
+    deleteex.addEventListener("click", (e) => {
+        modal.style.display = 'none';
+    })
+
+
+    const mouse1 = document.querySelector("#de_div1 #delete_b1");
+    mouse1.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = '#b4b4b4'
+    })
+    mouse1.addEventListener("mouseout", (e) => {
+        e.target.style.backgroundColor = '#fbfbfb';
+    })
+
+
+    const mouse2 = document.querySelector("#de_div1 #delete_b2");
+    mouse2.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = '#b4b4b4'
+    })
+    mouse2.addEventListener("mouseout", (e) => {
+        e.target.style.backgroundColor = '#fbfbfb';
+    })
+
+
+    mouse1.addEventListener("click", (e) => {
+        modal.style.display = 'none';
+    })
+
+    mouse2.addEventListener("click", (e) => {
+        modal.style.display = 'none';
+    })
+
 </script>
 </html>
