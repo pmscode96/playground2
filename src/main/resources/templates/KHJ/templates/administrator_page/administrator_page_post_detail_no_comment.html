@@ -117,15 +117,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-[12px]">
+                        <div id="sharing_div1" class="flex gap-[12px]">
                             <div class="relative flex items-center">
                                 <button type="button" class="">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] content_quaternary">
+                                    <svg id="sharing" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] content_quaternary">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20 6a3 3 0 0 1-5.022 2.216l-5.01 3.34c.018.127.029.255.031.385l4.84 2.978a3 3 0 1 1-.83 1.838l-4.672-2.876a3 3 0 1 1-.315-4.098l5.01-3.34A3 3 0 1 1 20 6Z"></path>
                                     </svg>
                                 </button>
                             </div>
-                            <div class="relative flex items-center">
+                            <div id="threelistbox_div1" class="relative flex items-center">
                                 <div class="relative flex items-center">
                                     <button type="button">
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] content_quaternary">
@@ -133,7 +133,7 @@
                                         </svg>
                                     </button>
 <!--                                점 세개 클릭 시 나오는 리스트 박스-->
-                                    <div class="absolute right-0 z-20 min-w-[204px]" style="top: 36px;">
+                                    <div id="threelistbox" class="absolute right-0 z-20 min-w-[204px]" style="top: 36px;">
                                         <ul class="rounded-[8px] p-[8px] surface_primary shadow-menu undefined">
                                             <li tabindex="-1" data-option-value="" class="undefined">
                                                 <button type="button" class="w-full py-[12px] px-[20px] rounded-[8px] text-left content_primary font_label_regular_lg surface_primary hover:surface_tertiary text-ellipsis overflow-hidden whitespace-nowrap" data-option-value="">수정</button>
@@ -176,8 +176,8 @@
                                         </div>
                                     </div>
 <!--                                    다운로드 아이콘 부분-->
-                                    <a target="_blank" rel="noreferrer">
-                                        <svg viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[16px] h-[17px] content_accent_active">
+                                    <a id="download_a" target="_blank" rel="noreferrer">
+                                        <svg id="download_svg" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[16px] h-[17px] content_accent_active">
                                             <path d="M2 12a1 1 0 1 0-2 0v6h16v-6a1 1 0 1 0-2 0v4H2v-4Z"></path>
                                             <path d="M8 12.9 3.293 8.193a1 1 0 0 1 1.414-1.415L7 9.071V1.586a1 1 0 1 1 2 0V9.07l2.293-2.293a1 1 0 1 1 1.414 1.415L8 12.9Z"></path>
                                         </svg>
@@ -255,10 +255,10 @@
                       flex flex-col items-center
                       px-[24px] rounded-2xl">
                 <div class="w-full py-[28px] px-[4px] md:py-[32px] md:px-[8px]">
-                    <div class="relative">
+                    <div id="delete_div1" class="relative">
                         <h4 class="font_headline_bold_md content_primary mb-[24px]
-      flex justify-center">공유하기</h4>
-                        <div class="absolute right-0 top-0">
+                            flex justify-center">공유하기</h4>
+                        <div id="delete_div2" class="absolute right-0 top-0">
                             <button type="button" class="flex items-center justify-center w-[32px] h-[32px] rounded-[50%] surface_tertiary">
                                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px] mobile:w-[20px] mobile:h-[20px] mobile:content_primary">
                                     <path d="M5.707 5.707a1 1 0 0 0 0 1.414l4.95 4.95-4.95 4.95a1 1 0 1 0 1.414 1.414l4.95-4.95 4.95 4.95a1 1 0 0 0 1.414-1.414l-4.95-4.95 4.95-4.95a1 1 0 1 0-1.414-1.414l-4.95 4.95-4.95-4.95a1 1 0 0 0-1.414 0Z"></path>
@@ -306,4 +306,43 @@
         </div>
     </div>
 </body>
+<script>
+    const share = document.querySelector("#sharing_div1 #sharing");
+    const share_modal = document.querySelector(".z-0");
+
+    share.addEventListener("click", (e) => {
+        share_modal.style.display = 'block';
+    })
+
+    const del = document.querySelector("#delete_div1 #delete_div2");
+    del.addEventListener("click", (e) => {
+        share_modal.style.display = 'none';
+    })
+
+    const threelistbox_div1 = document.querySelector("#threelistbox_div1");
+    const threelistbox = document.querySelector("#threelistbox");
+    threelistbox_div1.addEventListener("click", (e) => {
+        if(threelistbox.style.display !== 'block'){
+            threelistbox.style.display = 'block';
+        }else{
+            threelistbox.style.display = 'none';
+        }
+
+    })
+
+    const download = document.querySelector("#download_a #download_svg");
+    download.addEventListener("click", (e) => {
+        if (download.style.fill !== '#7e69fe'){
+            download.style.fill = '#7e69fe';
+        }
+        else if(download.style.fill !== '#8a8a8b'){
+            download.style.fill = '#8a8a8b';
+        }
+        // else{
+        //     download.style.fill = '#8a8a8b';
+        // }
+    })
+
+
+</script>
 </html>
