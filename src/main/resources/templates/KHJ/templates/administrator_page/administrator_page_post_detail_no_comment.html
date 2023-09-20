@@ -248,7 +248,7 @@
                                 </div>
                                 <div style="height: 18px;"></div>
                                 <div class="flex justify-end gap-[10px]">
-                                    <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">취소</button>
+                                    <button id="delete" type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">취소</button>
                                     <button id="register" type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">등록</button>
                                 </div>
                             </div>
@@ -389,6 +389,13 @@
     text.addEventListener("click",(e) => {
         register.style.backgroundColor = 'black';
         register.style.cursor = 'pointer';
+    })
+
+    const de = document.querySelector("#delete");
+    de.addEventListener("click", (e) => {
+        chat.style.display = 'block';
+        chat_1.style.display = 'none';
+        chat.style.display = 'flex';
     })
 
 </script>
