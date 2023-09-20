@@ -3181,13 +3181,15 @@ h4 {
 }
 .main_div2_section2 .div1 .div5 .d2{
     cursor: pointer;
+
+    overflow: scroll;
 }
 .main_div2_section2 .div1 .div5 .d2 .d2_1{
     position: relative;
 
     text-overflow: ellipsis;
     /*text-overflow:clip;*/
-    overflow:hidden;
+    /*overflow:hidden;*/
     word-break:break-all;
     /*white-space: nowrap;*/
 
