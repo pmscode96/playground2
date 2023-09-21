@@ -1009,6 +1009,7 @@ textarea {
     flex: 1;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 
 .tox .tox-edit-area::before {
@@ -1114,3 +1115,110 @@ textarea {
     padding: 0.5rem;
 }
 
+.select-bx {
+    display: none;
+}
+
+.select-bx label {
+    flex-direction: column;
+    height: 96px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.select-bx input {
+    height: 48px;
+}
+
+.select-bx input::placeholder {
+    color: #000;
+}
+
+.select-bx input:hover {
+    background: #f3f3f4;
+}
+
+.sss1, .sss2 {
+    width: 247.4px;
+}
+
+.db2 {
+    display: block;
+}
+
+.select-bx2 li label {
+    cursor: pointer;
+}
+
+.content-input-bx {
+    width: 100% !important;
+    margin-left: 20px !important;
+    margin-top: 12px !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    font-family: inherit !important;
+    resize: none;
+}
+
+.select-bx22 {
+    color: #000 !important;
+    fill: #333334 !important;
+    cursor: pointer;
+}
+
+.more-select {
+    position: absolute !important;
+    width: 138px !important;
+    background: #f7f7f7 !important;
+    height: 200% !important;
+    top: 10px;
+    z-index: 999999 !important;
+}
+
+/* Dropdown Button Style */
+.dropdown-toggle {
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;
+  }
+  
+  /* Dropdown Menu Style */
+  .dropdown-menu {
+    display: none;
+    position: absolute !important;
+    min-width: 100px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+    z-index: 1 !important;
+    width: 138px !important;
+    top: 34px !important;
+    background: #f7f7f7 !important;
+    border: none !important;
+    border-radius: 3px !important;
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+  
+  /* Dropdown Item Style */
+  .dropdown-item {
+    padding: 5px 10px !important;
+    text-decoration: none !important;
+    display: block !important;
+    color: #333 !important;
+  }
+  
+  .dropdown-item:hover {
+    background: #cce2fa !important;
+  }
+  
+  .tox-toolbar {
+    transform: none !important;
+  }
+
+  .open22 {
+    display: block !important;
+  }
