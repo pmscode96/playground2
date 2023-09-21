@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="administrator_page_post_detail.css">
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/framework-560765ab0625ba27.js" defer=""></script>
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/main-f82cef7d6a5937df.js" defer=""></script>
+    <script src="administrator_page_post_detail-change-btn.js"></script>
     <style>
         @media (min-width: 1024px) {
             .lg\:px-\[32px\] {
@@ -159,7 +160,7 @@
 <!--                        첨부 파일 부분-->
                         <div class="md:w-[380px]">
                             <div style="height: 12px;"></div>
-                            <ul class="flex flex-col gap-y-[8px]">
+                            <ul class="flex flex-col gap-y-[8px] cusp">
                                 <li class="h-[76px] flex items-center justify-between border border_primary rounded-[8px] p-[12px] pr-[24px]">
                                     <div class="flex items-center gap-x-[12px]">
                                         <div class="flex justify-center items-center w-[40px] h-[40px] rounded-[8px] surface_tertiary">
@@ -238,7 +239,7 @@
                                 <div style="height: 12px;"></div>
                                 <div class="h-full flex flex-col">
                                     <label class="flex flex-grow shrink-0 ">
-                                        <textarea placeholder="댓글을 작성해주세요..." class="w-full h-[48px] max-h-[88px] px-[20px] py-[14px]
+                                        <textarea placeholder="댓글을 작성해주세요..." class="w-full h-[48px] max-h-[88px] px-[20px] py-[14px] reply-inp
           rounded-[8px] border-solid outline-none font_body_regular_md
           content_secondary placeholder:font_body_regular_md placeholder:content_disabled
           disabled:surface_tertiary disabled:border_black_opacity
@@ -248,7 +249,7 @@
                                 <div style="height: 18px;"></div>
                                 <div class="flex justify-end gap-[10px]">
                                     <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">취소</button>
-                                    <button type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">등록</button>
+                                    <button type="button" disabled="" class="upload-btn22 relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">등록</button>
                                 </div>
                             </div>
                         </div>
