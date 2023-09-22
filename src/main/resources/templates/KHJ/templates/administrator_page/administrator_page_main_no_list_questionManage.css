@@ -667,17 +667,13 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 .absolute_top1{
     display: none;
-
     top: 42px;
     z-index: 10;
     right: 0;
     position: absolute;
-
 }
 
 .absolute_top2{
-    display: none;
-
     top: 42px;
     z-index: 10;
     right: 0;
