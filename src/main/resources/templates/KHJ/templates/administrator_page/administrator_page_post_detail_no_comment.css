@@ -141,8 +141,8 @@ a {
 }
 
 .content_accent {
-    color: #5b44ea;
-    fill: #5b44ea;
+    /*color: #5b44ea;*/
+    /*fill: #5b44ea;*/
 }
 
 audio, canvas, embed, iframe, img, object, svg, video {
@@ -437,13 +437,13 @@ a {
 }
 
 .content_accent {
-    color: #5b44ea;
-    fill: #5b44ea;
+    /*color: #5b44ea;*/
+    /*fill: #5b44ea;*/
 }
 
 .content_accent_active {
-    color: #7e69fe;
-    fill: #7e69fe;
+    /*color: #7e69fe;*/
+    /*fill: #7e69fe;*/
 }
 
 .content-none {
@@ -1140,4 +1140,22 @@ button {
 
 .fixed {
     position: fixed;
+}
+
+
+
+.z-0 {
+    display: none;
+}
+
+#threelistbox{
+    display: none;
+}
+
+#download_a #download_svg{
+    fill: #8a8a8b;
+}
+
+.fills{
+    fill: #7e69fe;
 }

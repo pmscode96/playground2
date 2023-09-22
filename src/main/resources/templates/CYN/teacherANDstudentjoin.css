@@ -21,6 +21,45 @@
     src: url('./fonts/Roboto-Regular.woff') format("woff"),
     url('./fonts/Roboto-Regular.woff') format("woff")
 }
+@font-face {
+    font-family: KakaoBig Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigBold (4).woff2') format("woff2"),
+    url("./fonts/KakaoBigBold (4).woff2") format("woff2")
+}
+
+@font-face {
+    font-family: KakaoBig Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/KakaoBigRegular (3).woff2') format("woff2"),
+    url('./fonts/KakaoBigRegular (3).woff2') format("woff2")
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: auto;
+    text-rendering: auto;
+    /* color: buttontext; */
+    letter-spacing: normal;
+    word-spacing: normal;
+    /* line-height: normal; */
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    /* cursor: default; */
+    box-sizing: border-box;
+    /* background-color: buttonface; */
+    writing-mode: horizontal-tb !important;
+    /* margin: 0em; */
+    padding-block: 1px;
+    padding-inline: 6px;}
 
 a {
     text-decoration: none;
@@ -151,4 +190,73 @@ body, html {
 #wrap .div2 .div2_1 .div2_2 .a2 span{
     font-size: 12px;
     color: rgb(98, 98, 98);
+}
+
+
+
+
+#wrap .div2 .div2_1 .div2_3{
+    padding-top: 50px;
+
+    display: none;
+}
+
+
+
+.article{
+    width: 600px;
+    height: 700px;
+
+    padding: 0 50px;
+}
+
+.article .article_div1{
+    border: 1px solid rgba(0,0,0,.12);
+    text-align: center;
+
+    font-family: "KakaoBig Regular","KakaoBig Bold";
+    font-size: 13px;
+
+
+}
+.article .article_div1 .d1{
+    padding-top: 30px;
+    font-family: "KakaoBig Regular","KakaoBig Bold";
+
+    margin: 0 15px;
+}
+.article .article_div1 .d2{
+    padding-top: 30px;
+
+    margin: 0 15px;
+}
+.article .article_div1 .d3{
+    padding-top: 30px;
+
+    margin: 0 15px;
+}
+.article .article_div1 .d4{
+    padding-top: 30px;
+
+    margin: 0 15px;
+}
+
+
+.article .article_div1 .d4{
+    padding-bottom: 30px;
+}
+.article .article_div1 button{
+    background-color: #f0f0f0;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 51px;
+    color: #191919;
+
+    font-family: "KakaoBig Regular","KakaoBig Bold";
 }
