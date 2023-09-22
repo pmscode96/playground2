@@ -782,3 +782,45 @@ audio, canvas, embed, iframe, img, object, svg, video {
 .text-right {
     text-align: right;
 }
+
+.more-select-bx-status {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.more-btn {
+    width: 47.6px;
+}
+
+.status-select-bx-1 {
+    border-radius: 16px 16px 0 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.por .poa {
+    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 함 */
+    left: 17%;
+    font-size: 12px;
+}
+
+.relative .poa2 {
+    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 함 */
+    left: 28%;
+    font-size: 12px;
+}
+
+.status-select-bx-2 {
+    border-radius: 0 0 16px 16px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.por {
+    position: relative;
+}
+
+.poa {
+    position: absolute;
+}

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="administrator_page_main_use_list_userManage.css">
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/framework-560765ab0625ba27.js" defer=""></script>
     <script src="https://steadio-asset.s3.ap-northeast-2.amazonaws.com/_next/static/chunks/main-f82cef7d6a5937df.js" defer=""></script>
+    <script src="administrator_page_main_no_list_postManage.js"></script>
+    <script src="administrator_page_main_use_list_schoolManage-status-btn.js"></script>
     <style>
         @media (min-width: 1024px) {
             .lg\:px-\[32px\] {
@@ -117,7 +119,7 @@
 <!--                        학교 관리-->
                         <li class="h-[40px] mb-[8px] px-[12px] rounded-[8px] flex items-center surface_accent_light hover:surface_accent_light">
                             <a class="flex items-center grow" >
-                                <img src="/templates/KHJ/icon/school_choice.svg" class="h-[24px] w-[24px] mr-[10px] content_accent_active">
+                                <img src="../../icon/school_choice.svg" class="h-[24px] w-[24px] mr-[10px] content_accent_active">
                                 <span class="block font_label_bold_xl content_secondary">학교 관리</span>
                             </a>
                         </li>
@@ -278,11 +280,12 @@
                                         <div class="shrink-0 flex items-center font_label_medium_md content_primary justify-end" style="width: 513px;">
                                             <span class="mr-[8px]">멤버 수</span>
                                             <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[6px] h-[10px]">
-                                                <path d="m3 0 3 4H0l3-4ZM3 10 0 6h6l-3 4Z" fill="#B9B9BB"></path>
+                                                <path d="m3 0 3 4H0l3-4Z" fill="#333334"></path>
+                                                <path d="M3 10 0 6h6l-3 4Z" fill="#B9B9BB"></path>
                                             </svg>
                                         </div>
                                     </button>
-                                    <div class="shrink-0 flex items-center font_label_medium_md content_primary justify-end" style="width: 39px;">수정</div>
+                                    <div class="shrink-0 flex items-center font_label_medium_md content_primary justify-end" style="width: 39px;">상태</div>
                                     <div class="shrink-0 flex items-center font_label_medium_md content_primary justify-end" style="width: 37px;">삭제</div>
                                 </div>
                             </div>
@@ -320,10 +323,18 @@
                                             <!--                                                멤버-->
                                             <p class="content_secondary font_label_regular_lg text-right w-[348px]">234</p>
                                             <!--                                                수정-->
-                                            <div>
-                                                <button type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="left: 19px">
-                                                    <img src="/templates/KHJ/icon/fix_icon.svg" class="w-[16px] h-[16px] content_primary">
+                                            <div class="por">
+                                                <button type="button" class="more-btn relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="left: 19px">
+                                                    <img src="../../icon/fix_icon.svg" class="w-[16px] h-[16px] content_primary">
                                                 </button>
+                                                <div class="more-select-bx-status">
+                                                    <button type="button" class="por status-select-bx-1 relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="left: 19px">
+                                                        <p class="poa w-[16px] h-[16px] content_primary">가입중</p>
+                                                    </button>
+                                                    <button type="button" class="status-select-bx-2 relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled" style="left: 19px">
+                                                        <p class="poa poa2 w-[16px] h-[16px] content_primary">탈퇴</p>
+                                                    </button>
+                                                </div>
                                             </div>
                                             <!--                                                삭제-->
                                             <div>

@@ -211,9 +211,9 @@
                         </h4>
                         <div style="height: 24px;"></div>
 <!--                        댓글 작성 부분-->
-                        <div class="border border_primary rounded-[8px]">
+                        <div id="chatting" class="border border_primary rounded-[8px]">
 <!--                            -->
-                            <button type="button" class="w-full p-[12px] flex items-center gap-[16px]">
+                            <button id="chatting_bt1" type="button" class="w-full p-[12px] flex items-center gap-[16px]">
                                 <div class="relative w-full h-full rounded-full flex items-center justify-center" type="button" style="width: 32px; height: 32px;">
 <!--                                    댓글 작성자 프로필이미지-->
                                     <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
@@ -223,6 +223,38 @@
                                 </div>
                                 <span class="font_label_regular_lg content_disabled">댓글을 작성해주세요...</span>
                             </button>
+<!--#chatting #chatting_bt1-->
+
+                            <div id="chatting_div1" class="p-[16px]" style="display: none;">
+                                <div class="flex gap-[10px]">
+                                    <button class="relative w-full h-full rounded-full flex items-center justify-center" type="button" style="width: 32px; height: 32px;">
+                                        <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                            <img alt="프로필 이미지" sizes="100vw" srcset="https://steadio.co/_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2F8624e861-d6ba-43a1-a654-9d2dab0cd70c%2FprofileImage%2F224cd923-9f9e-4957-962c-3834a344eb0a.jpg%3Fauto%3Dformat%252Ccompress%26h%3D300%26lossless%3Dtrue%26w%3D300&amp;w=1920&amp;q=75" decoding="async" data-nimg="fill" class="rounded-full" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center center;"></span>
+                                        <span class="absolute top-0 left-0 w-full h-full border border_black_opacity rounded-full"></span>
+                                    </button>
+                                    <div class="flex gap-[4px] items-center">
+                                        <div class="font_label_bold_lg content_primary">홍길동</div>
+                                    </div>
+                                </div>
+                                <div style="height: 12px;"></div>
+                                <div class="h-full flex flex-col">
+                                    <label class="flex flex-grow shrink-0 ">
+                                        <textarea id="textarea" placeholder="댓글을 작성해주세요..." class="w-full h-[48px] max-h-[88px] px-[20px] py-[14px]
+          rounded-[8px] border-solid outline-none font_body_regular_md
+          content_secondary placeholder:font_body_regular_md placeholder:content_disabled
+          disabled:surface_tertiary disabled:border_black_opacity
+          px-[20px] border-[2px] border_black_opacity focus:border_accent_active surface_primary disabled:content_disabled" style="height: 48px;"></textarea>
+                                    </label>
+                                </div>
+                                <div style="height: 18px;"></div>
+                                <div class="flex justify-end gap-[10px]">
+                                    <button id="delete" type="button" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_secondary surface_primary border border-solid border_black_opacity hover:surface_tertiary hover:border_secondary active:surface_tertiary active:border_secondary disabled:surface_primary disabled:border_black_opacity disabled:border disabled:border-solid px-[15px]  false disabled:content_disabled">취소</button>
+                                    <button id="register" type="button" disabled="" class="relative flex justify-center items-center font_button_bold_md  h-[32px] rounded-[16px] content_primary_inverse surface_accent hover:surface_accent_active active:surface_accent_active disabled:surface_disabled px-[16px]  false disabled:content_disabled">등록</button>
+                                </div>
+                            </div>
+
+
+
                         </div>
                         <div style="height: 33px;"></div>
 <!--                        댓글 쪽-->
@@ -343,6 +375,27 @@
         // }
     })
 
+    const chat = document.querySelector("#chatting #chatting_bt1");
+    const chat_1 = document.querySelector("#chatting #chatting_div1");
+    chat.addEventListener("click", (e) => {
+        chat.style.display = 'none';
+        chat_1.style.display = 'block';
+    })
+
+    const text = document.querySelector("#textarea");
+    const register = document.querySelector("#register");
+    text.addEventListener("click",(e) => {
+        register.style.backgroundColor = 'black';
+        register.style.cursor = 'pointer';
+    })
+
+    const de = document.querySelector("#delete");
+    de.addEventListener("click", (e) => {
+        chat.style.display = 'block';
+        chat_1.style.display = 'none';
+        chat.style.display = 'flex';
+        register.style.backgroundColor = '#f3f3f4';
+    })
 
 </script>
 </html>

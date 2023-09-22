@@ -1141,3 +1141,13 @@ button {
 .fixed {
     position: fixed;
 }
+
+.cusp {
+    cursor: pointer;
+}
+
+.chg-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
