@@ -15,119 +15,115 @@
 <!--    <div id="playgroundIndex">-->
 <!--        <a>본문 바로가기</a>-->
 <!--    </div>-->
-<div id="playgroundWrap">
-    <header id="playgroundHead">
-        <div class="cs_head">
-            <div class="info_other">
-                <div class="wrap_lang" id="btnLang">
-                    <a class="link_lang" href="javascript:void(0);" aria-expanded="false" aria-controls="sel_lang">
-                        <span class="screen_out">언어 선택</span>
-                        한국어
-                        <span class="ico_cs"></span>
+    <div id="playgroundWrap">
+        <header id="playgroundHead">
+            <div class="cs_head">
+                <div class="info_other">
+                    <div class="wrap_lang" id="btnLang">
+                        <a class="link_lang" href="javascript:void(0);" aria-expanded="false" aria-controls="sel_lang">
+                            <span class="screen_out">언어 선택</span>
+                            한국어
+                            <span class="ico_cs"></span>
+                        </a>
+                        <ul class="list_lang">
+                            <li>
+                                <a class="link_item" href="/setLocale?locale=ko" aria-current="true">
+                                    한국어
+                                    <!--                                <span class="ico_cs"></span>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link_item" href="/setLocale?locale=en" aria-current="false">
+                                    English
+                                    <!--                                <span class="ico_cs"></span>-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="wrap_login">
+                        <a class="link_login btn_login" id="btn_login" href="https://accounts.kakao.com/login?continue=">
+                            로그인
+                        </a>
+                    </div>
+                </div>
+
+                <h1 class="tit_cs">
+                    <a href="/" id="playgroundServiceLogo">
+                        <img alt="playground 고객센터" class="img_cs" height="38" src="https://cs.kakao.com/img/cskakaocom/pc/tit_cs2.gif" width="208">
                     </a>
-                    <ul class="list_lang">
+                </h1>
+
+                <div class="wrap_search" id="wrapSearch">
+                    <h2 class="screen_out">검색</h2>
+                    <!-- 검색 창 -->
+                    <form accept-charset="UTF-8" action="/search" id="searchForm" method="get" onsubmit="return onSubmitSearchForm()">
+                        <fieldset>
+                            <legend class="screen_out">검색어 입력폼</legend>
+                            <div class="box_searchbar" id="boxSearchbar">
+                                <label class="lab_keyword" for="query" id="labKeyword">
+                                    궁금한 점이 있다면 도움말을 검색해 보세요.
+                                    <span class="screen_out">도움말 검색, 자동완성, 글자 입력후 방향키를 사용하여 탐색 가능</span>
+                                </label>
+                                <input autocomplete="off" class="tf_keyword" id="query" name="query" type="text" value="" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="suggestUl">
+                                <button class="ico_cs btn_search" type="submit">
+                                    <span class="ir_wa">검색</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--                <div id="suggest_live_alert" role="status">&lt;!&ndash; 서제스트 활성화 알림&ndash;&gt;-->
+                    <!--                  <strong class="screen_out">0개 제안 검색어 표시됨</strong>-->
+                    <!--                </div>-->
+                    <div id="box_suggest" class="box_suggest" style="z-index: 12">
+                        <strong class="screen_out">제안 검색어 목록</strong>
+                        <ul class="list_suggest" role="listbox" id="suggestUl"></ul></div>
+                    <!-- //검색 창 -->
+                    <!-- 추천검색어 목록-->
+                    <div class="search_keyword">
+                        <h2 class="screen_out">추천 검색어 목록</h2>
+
+                        <a href="search?query=선생님께 질문 방법">선생님께 질문 방법</a>
+                        <a href="search?query=비밀번호 변경">비밀번호 변경</a>
+                        <a href="search?query=커뮤니티 이용하기">커뮤니티 이용하기</a>
+                        <a href="search?query=정보변경">정보변경</a>
+                        <a href="search?query=이용제한">이용제한</a>
+                    </div>
+                </div>
+            </div>
+<!--            공지사항-->
+            <div class="cs_navi">
+                <div class="inner_navi">
+                    <strong class="screen_out">현재 페이지</strong>
+                    <ul class="list_path">
                         <li>
-                            <a class="link_item" href="/setLocale?locale=ko" aria-current="true">
-                                한국어
-                                <!--                                <span class="ico_cs"></span>-->
+                            <a class="link_path" href="/">
+                                홈
                             </a>
+                            <span class="ico_cs ico_arr">&gt;</span>
                         </li>
-                        <li>
-                            <a class="link_item" href="/setLocale?locale=en" aria-current="false">
-                                English
-                                <!--                                <span class="ico_cs"></span>-->
+                        <li aria-current="page">
+                            <a class="link_path" href="/helps?service=72&amp;locale=ko">
+                                유용한 도움말
                             </a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="wrap_login">
-                    <a class="link_login btn_login" id="btn_login" href="https://accounts.kakao.com/login?continue=">
-                        로그인
-                    </a>
-                </div>
             </div>
+<!--            네비게이션-->
+<!--            네비게이션-->
 
-            <h1 class="tit_cs">
-                <a href="/" id="playgroundServiceLogo">
-                    <img alt="playground 고객센터" class="img_cs" height="38"
-                         src="https://cs.kakao.com/img/cskakaocom/pc/tit_cs2.gif" width="208">
-                </a>
-            </h1>
-
-            <div class="wrap_search" id="wrapSearch">
-                <h2 class="screen_out">검색</h2>
-                <!-- 검색 창 -->
-                <form accept-charset="UTF-8" action="/search" id="searchForm" method="get"
-                      onsubmit="return onSubmitSearchForm()">
-                    <fieldset>
-                        <legend class="screen_out">검색어 입력폼</legend>
-                        <div class="box_searchbar" id="boxSearchbar">
-                            <label class="lab_keyword" for="query" id="labKeyword">
-                                궁금한 점이 있다면 도움말을 검색해 보세요.
-                                <span class="screen_out">도움말 검색, 자동완성, 글자 입력후 방향키를 사용하여 탐색 가능</span>
-                            </label>
-                            <input autocomplete="off" class="tf_keyword" id="query" name="query" type="text" value=""
-                                   role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="suggestUl">
-                            <button class="ico_cs btn_search" type="submit">
-                                <span class="ir_wa">검색</span>
-                            </button>
-                        </div>
-                    </fieldset>
-                </form>
-                <!--                <div id="suggest_live_alert" role="status">&lt;!&ndash; 서제스트 활성화 알림&ndash;&gt;-->
-                <!--                  <strong class="screen_out">0개 제안 검색어 표시됨</strong>-->
-                <!--                </div>-->
-                <div id="box_suggest" class="box_suggest" style="z-index: 12">
-                    <strong class="screen_out">제안 검색어 목록</strong>
-                    <ul class="list_suggest" role="listbox" id="suggestUl"></ul>
-                </div>
-                <!-- //검색 창 -->
-                <!-- 추천검색어 목록-->
-                <div class="search_keyword">
-                    <h2 class="screen_out">추천 검색어 목록</h2>
-
-                    <a href="search?query=선생님께 질문 방법">선생님께 질문 방법</a>
-                    <a href="search?query=비밀번호 변경">비밀번호 변경</a>
-                    <a href="search?query=커뮤니티 이용하기">커뮤니티 이용하기</a>
-                    <a href="search?query=정보변경">정보변경</a>
-                    <a href="search?query=이용제한">이용제한</a>
-                </div>
-            </div>
-        </div>
-        <!--            공지사항-->
-        <div class="cs_navi">
-            <div class="inner_navi">
-                <strong class="screen_out">현재 페이지</strong>
-                <ul class="list_path">
-                    <li>
-                        <a class="link_path" href="/">
-                            홈
-                        </a>
-                        <span class="ico_cs ico_arr">&gt;</span>
-                    </li>
-                    <li aria-current="page">
-                        <a class="link_path" href="/helps?service=72&amp;locale=ko">
-                            유용한 도움말
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--            네비게이션-->
-        <!--            네비게이션-->
-
-    </header>
-</div>
+        </header>
+    </div>
 <hr class="hide">
 <main id="playgroundContent" style="display: block; width: 990px; margin: 0 auto; min-height: 484px;">
     <div id="cMain">
-        <div class="dimmed_layer"></div>
+        <div class="dimmed_layer"> </div>
         <div class="basic_layer">
             <div class="inner_basic_layer">
-                <!--                modal창(로그인 관련쪽-->
+<!--                modal창(로그인 관련쪽-->
                 <div class="wrap_cont">
-                    <!--                    카카오 로그인 alert-->
+<!--                    카카오 로그인 alert-->
                     <div class="cont_layer selectLayer" id="loginAlert" style="">
                         <div class="layer_head">
                             <h2 class="tit_layer">로그인 하시겠습니까?</h2>
@@ -145,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <!--                카카오 로그인 alert 2-->
+<!--                카카오 로그인 alert 2-->
                 <div class="cont_layer" id="loginAlert" style="display:none;">
                     <div class="layer_head">
                         <h2 class="tit_layer">SMS 인증 후 신고하기</h2>
@@ -185,7 +181,7 @@
                 </nav>
             </div>
             <!-- side navigation -->
-            <!--            오른쪽 본문쪽-->
+<!--            오른쪽 본문쪽-->
             <article class="cont_public" id="mArticle">
                 <h2 class="screen_out" id="kakaoBody"> playgorund(놀이터) 고객센터 본문 </h2>
                 <h3 class="tit_public"> 서비스 이용 문의 </h3>
@@ -193,11 +189,7 @@
                 <ol class="wrap_cont" id="faq_list">
                     <li class="item_info on" data-id="1073184833" aria-expanded="ture">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184833&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184833"
-                               href="/helps?articleId=1073184833&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184833&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184833" href="/helps?articleId=1073184833&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">1</span>
                                 <strong class="tit_info"> playground(놀이터)는 어떤 서비스인가요? </strong>
 
@@ -216,10 +208,9 @@
                                 </p>
                                 <p style="line-height: 1;">
                                     <span style="color: rgb(0, 0, 0);">교사와 학생이 모두 사용할 수 있는 소통 플랫폼입니다..&nbsp;</span>
-                                </p>
-                                <p style="line-height: 1;">
-                                    <span style="color: rgb(0, 0, 0);">교사와 학생의 관계를 변화시키고 싶어요.&nbsp;</span>
-                                </p>
+                                </p><p style="line-height: 1;">
+                                <span style="color: rgb(0, 0, 0);">교사와 학생의 관계를 변화시키고 싶어요.&nbsp;</span>
+                            </p>
                                 <p style="line-height: 1;"><br></p>
                                 <p style="line-height: 1;">
                                     <span style="color: rgb(231, 99, 99);">교사 또는 학생이면 누구나 가입하여 활동 할 수 있어요.&nbsp;</span>
@@ -262,11 +253,7 @@
                     </li>
                     <li class="item_info" data-id="1073184834">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184834&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184834"
-                               href="/helps?articleId=1073184834&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184834&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184834" href="/helps?articleId=1073184834&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">2</span>
                                 <strong class="tit_info"> playgorund(놀이터)에 가입하고 싶어요. </strong>
 
@@ -290,8 +277,7 @@
                                     <span style="color: rgb(0, 0, 0);"><br></span>
                                 </p>
                                 <p>
-                                    <a href="https://accounts.kakao.com/weblogin/create_account?continue=https%3A%2F%2Ftogether.kakao.com%2Fauroville%2Fdonate"
-                                       target="_blank" title="새창열림">◆ playground(놀이터) 회원 가입하기</a>&nbsp;
+                                    <a href="https://accounts.kakao.com/weblogin/create_account?continue=https%3A%2F%2Ftogether.kakao.com%2Fauroville%2Fdonate" target="_blank" title="새창열림">◆ playground(놀이터) 회원 가입하기</a>&nbsp;
                                 </p>
                                 <p><br></p>
                             </div>
@@ -299,11 +285,7 @@
                     </li>
                     <li class="item_info" data-id="1073185571">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073185571&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073185571"
-                               href="/helps?articleId=1073185571&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073185571&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073185571" href="/helps?articleId=1073185571&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">3</span>
                                 <strong class="tit_info"> playground(놀이터)를 탈퇴하고 싶어요. </strong>
 
@@ -320,8 +302,7 @@
                                 <p style="margin-bottom: 0px; zoom: 1; padding: 0px; font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif; line-height: 18px;">
                                     <span style="color: rgb(0, 0, 0);">안녕하세요.&nbsp;</span>
                                 </p>
-                                <p style="margin-bottom: 0px; zoom: 1; padding: 0px; font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif; line-height: 18px;">
-                                    <br></p>
+                                <p style="margin-bottom: 0px; zoom: 1; padding: 0px; font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif; line-height: 18px;"><br></p>
                                 <p style="margin-bottom: 0px; zoom: 1; padding: 0px; font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif; line-height: 18px;">
                                     <span style="color: rgb(0, 0, 0);">탈퇴를 결심하셨다니 ㅠㅠ&nbsp;</span>
                                 </p>
@@ -335,8 +316,7 @@
                                     <span style="color: rgb(0, 0, 0);">
                                         <span style="font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif;">
                                             탈퇴는
-                                            <a href="https://together.kakao.com/preferences" target="_blank"
-                                               title="새창열림">설정 &gt; playground(놀이터) 탈퇴</a>&nbsp;
+                                            <a href="https://together.kakao.com/preferences" target="_blank" title="새창열림">설정 &gt; playground(놀이터) 탈퇴</a>&nbsp;
                                         </span>
                                     </span>
                                     <span style="color: rgb(0, 0, 0); font-family: &quot;apple SD gothic neo&quot;, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, dotum, 돋움, sans-serif;">메뉴에서 할 수 있습니다.&nbsp;</span>감사합니다.&nbsp;
@@ -346,13 +326,9 @@
                     </li>
                     <li class="item_info" data-id="1073184838">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184838&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184838"
-                               href="/helps?articleId=1073184838&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184838&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184838" href="/helps?articleId=1073184838&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">4</span>
-                                <strong class="tit_info"> playground(놀이터)에 로그인후 무엇을 해야되나요?? </strong>
+                                <strong class="tit_info"> playground(놀이터)에 로그인후  무엇을 해야되나요?? </strong>
 
                                 <span class="btn_arr">
                                     <span class="ico_arr ico_cs" aria-hidden="true">
@@ -396,11 +372,7 @@
 
                     <li class="item_info" data-id="1073184846">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184846&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184846"
-                               href="/helps?articleId=1073184846&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184846&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184846" href="/helps?articleId=1073184846&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">6</span>
                                 <strong class="tit_info"> 자유 게시판에서는 무엇을 할 수 있나요? </strong>
 
@@ -424,11 +396,7 @@
                     </li>
                     <li class="item_info" data-id="1073184836">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184836&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184836"
-                               href="/helps?articleId=1073184836&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184836&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184836" href="/helps?articleId=1073184836&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">7</span>
                                 <strong class="tit_info"> 학교 별 게시판에서는 무엇을 할 수 있나요? </strong>
 
@@ -455,11 +423,7 @@
                     </li>
                     <li class="item_info" data-id="1073186524">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073186524&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073186524"
-                               href="/helps?articleId=1073186524&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073186524&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073186524" href="/helps?articleId=1073186524&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">8</span>
                                 <strong class="tit_info"> 각 학교 별 문제풀이 게시판은 무엇을 할 수 있나요? </strong>
 
@@ -482,11 +446,7 @@
                     </li>
                     <li class="item_info" data-id="1073184837">
                         <div class="info_tit">
-                            <a class="link_cont"
-                               data-faq-url="/helps?articleId=1073184837&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               data-id="1073184837"
-                               href="/helps?articleId=1073184837&amp;service=72&amp;category=150&amp;device=&amp;locale=ko"
-                               onclick="return false ;">
+                            <a class="link_cont" data-faq-url="/helps?articleId=1073184837&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" data-id="1073184837" href="/helps?articleId=1073184837&amp;service=72&amp;category=150&amp;device=&amp;locale=ko" onclick="return false ;">
                                 <span class="num_info">9</span>
                                 <strong class="tit_info"> 내가 올린 댓글이 삭제 되었어요. </strong>
 
@@ -508,15 +468,14 @@
                                 </p>
                                 <p><br></p>
                                 <p>
-                                    <a href="https://together.kakao.com/supports/policy/comments" target="_blank"
-                                       title="새창열림">◆ 댓글 운영정책 보기</a>
+                                    <a href="https://together.kakao.com/supports/policy/comments" target="_blank" title="새창열림">◆ 댓글 운영정책 보기</a>
                                 </p>
                                 <p><br></p>
                             </div>
                         </div>
                     </li>
                 </ol>
-                <!--                페이지 이동 layer-->
+<!--                페이지 이동 layer-->
                 <div class="paging_comm">
                     <a class="btn_paging btn_fst" rel="prev" href="javascript:void(0);" aria-disabled="true">
                         <span class="ico_cs ico_arr">맨 첫 페이지로 이동</span>
@@ -546,8 +505,7 @@
                         5
                     </a>
 
-                    <a class="btn_paging btn_next" rel="next"
-                       href="/helps?service=72&amp;category=150&amp;locale=ko&amp;page=2">
+                    <a class="btn_paging btn_next" rel="next" href="/helps?service=72&amp;category=150&amp;locale=ko&amp;page=2">
                         <span class="ico_cs ico_arr">다음 페이지로 이동</span>
                     </a>
 
@@ -555,17 +513,17 @@
                         <span class="ico_cs ico_arr">마지막 페이지로 이동</span>
                     </a>
                 </div>
-                <!--                문의하기 부분-->
+<!--                문의하기 부분-->
                 <div class="wrap_btn">
                     <h2 class="screen_out">문의하기</h2>
                     <span class="txt_solution"> 원하시는 답변을 찾지못하셨다면, 고객센터로 문의해 주세요. </span>
                     <div class="bundle_btn">
-                        <!--                        1:1 상담 또는 이메일 문의하기-->
+<!--                        1:1 상담 또는 이메일 문의하기-->
                         <a id="requestBtn" class="btn_cs" href="/requests?service=72&amp;locale=ko">
                             <span class="ico_cs ico_write">직접입력하여</span>
                             문의하기
-                            <!--                            내일 관리자 페이지 아이콘 점검 및 간격이 흐트러 져서 맞춰주어야됨-->
-                            <!--                            또한 js 적용도 해야하고, 세세한 반응형 layer 예를 들면 클릭 시 또다른 창이 나오는 부분-->
+<!--                            내일 관리자 페이지 아이콘 점검 및 간격이 흐트러 져서 맞춰주어야됨-->
+<!--                            또한 js 적용도 해야하고, 세세한 반응형 layer 예를 들면 클릭 시 또다른 창이 나오는 부분-->
                         </a>
                     </div>
                 </div>

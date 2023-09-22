@@ -16,7 +16,5 @@ import org.springframework.web.servlet.view.RedirectView;
 public class playgroundAdministratorController {
 
     @GetMapping("administrator_page_main_no_list_postManage")
-    public void Move_No_List_PostManage() {
-        ;
-    }
+    public void Move_No_List_PostManage(){;}
 }

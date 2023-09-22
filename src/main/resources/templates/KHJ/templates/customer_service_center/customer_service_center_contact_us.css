@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 ._wt_kakao_envoy,
 ._wt_kakao_envoy button {
     line-height: 1.43;
@@ -14,17 +13,14 @@
     color: #000;
     letter-spacing: normal;
 }
-
 ._wt_kakao_envoy button {
     border: 0 none;
     background-color: transparent;
     cursor: pointer;
 }
-
 ._wt_kakao_envoy ._wt_num_comm {
     font-family: 'Helvetica Neue', Arial;
 }
-
 ._wt_kakao_envoy .os_windows,
 ._wt_kakao_envoy .os_windows button {
     line-height: 1.46;
@@ -32,7 +28,6 @@
     font-size: 13px;
     letter-spacing: -0.6px;
 }
-
 ._wt_kakao_envoy .os_windows ._wt_num_comm {
     font-family: Arial;
 }
@@ -46,7 +41,6 @@
     line-height: 0;
     text-indent: -9999px;
 }
-
 ._wt_kakao_envoy ._wt_ico_webchat {
     overflow: hidden;
     display: inline-block;
@@ -56,37 +50,31 @@
     vertical-align: top;
     text-indent: -9999px;
 }
-
 ._wt_kakao_envoy ._wt_ico_kakaotalk {
     width: 44px;
     height: 44px;
     background-position: 0 0;
 }
-
 ._wt_kakao_envoy ._wt_ico_close {
     width: 12px;
     height: 12px;
     background-position: 0 -50px;
 }
-
 ._wt_kakao_envoy ._wt_ico_ryan {
     width: 44px;
     height: 44px;
     background-position: -50px 0;
 }
-
 ._wt_kakao_envoy ._wt_ico_apeach {
     width: 44px;
     height: 44px;
     background-position: -100px 0;
 }
-
 ._wt_kakao_envoy ._wt_ico_muzi {
     width: 44px;
     height: 44px;
     background-position: -150px 0;
 }
-
 ._wt_kakao_envoy ._wt_ico_con {
     width: 44px;
     height: 44px;
@@ -100,14 +88,12 @@
     bottom: 0;
     z-index: 16777271;
 }
-
 ._wt_kakao_envoy ._wt_module_webchat {
     position: fixed;
     right: 20px;
     bottom: 20px;
     width: 380px;
 }
-
 ._wt_kakao_envoy ._wt_view_webchat {
     overflow: hidden;
     display: none;
@@ -120,7 +106,6 @@
     background-color: #ddd;
     box-shadow: 0 2px 16px 0 rgba(77, 79, 100, 0.16);
 }
-
 ._wt_kakao_envoy ._wt_view_webchat ._wt_frame_chat {
     overflow: hidden;
     display: block;
@@ -128,7 +113,6 @@
     height: 100%;
     border: 0 none;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat {
     position: absolute;
     right: 0;
@@ -138,18 +122,15 @@
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
     animation: scaleUp 0.3s cubic-bezier(0, 0, 0.75, 1.5);
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_webchat {
     display: block;
     width: 60px;
     height: 60px;
     white-space: nowrap;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_open {
     padding: 8px;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     overflow: hidden;
     display: block;
@@ -157,30 +138,25 @@
     width: 44px;
     height: 44px;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_open ._wt_ico_webchat {
     position: absolute;
     top: 0;
     left: 0;
     transition: top 0.3s, opacity 0.3s;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_open ._wt_ico_guide {
     top: -100%;
     opacity: 0;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_close {
     display: none;
     float: right;
     padding: 20px;
     text-align: right;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_close ._wt_ico_close {
     margin: 4px;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_logout {
     overflow: hidden;
     display: none;
@@ -188,7 +164,6 @@
     width: auto;
     padding: 20px 0;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     display: block;
     width: 0;
@@ -199,7 +174,6 @@
     text-align: left;
     text-indent: 20px;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout::after {
     position: absolute;
     top: 23px;
@@ -211,7 +185,6 @@
     content: '';
     opacity: 0.15;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_emph_new {
     position: absolute;
     top: 12px;
@@ -222,7 +195,6 @@
     background-color: #fff;
     transition: all 0.2s cubic-bezier(0, 0, 0.75, 1.75);
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_emph_new::after {
     position: absolute;
     top: 0;
@@ -234,7 +206,6 @@
     content: '';
     transition: all 0.2s cubic-bezier(0, 0, 0.75, 1.75);
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_layer_tooltip {
     display: none;
     position: absolute;
@@ -246,46 +217,38 @@
     transform-origin: right bottom;
     opacity: 0;
 }
-
 ._wt_kakao_envoy ._wt_util_webchat ._wt_layer_on {
     transform: scale(1, 1);
     opacity: 1;
 }
-
 ._wt_kakao_envoy ._wt_msg_on ._wt_emph_new {
     top: 6px;
     right: 0;
     width: 12px;
     height: 12px;
 }
-
 ._wt_kakao_envoy ._wt_msg_on ._wt_emph_new::after {
     top: 2px;
     left: 2px;
     width: 8px;
     height: 8px;
 }
-
 ._wt_kakao_envoy ._wt_guide_on ._wt_btn_open ._wt_ico_kakaotalk {
     top: 100%;
     opacity: 0;
 }
-
 ._wt_kakao_envoy ._wt_guide_on ._wt_btn_open ._wt_ico_guide {
     top: 0;
     opacity: 1;
 }
-
 ._wt_kakao_envoy ._wt_guide_on ._wt_layer_tooltip {
     display: block;
 }
-
 ._wt_kakao_envoy ._wt_layer_tooltip {
     padding: 7px 12px 5px;
     border-radius: 16px;
     background: url(https://t1.kakaocdn.net/kakaotalk_web/images/20211206_095349/bg_tooltip.png) 0 0 repeat;
 }
-
 ._wt_kakao_envoy ._wt_layer_tooltip::after {
     position: absolute;
     right: 7px;
@@ -295,32 +258,25 @@
     background: url(https://t1.kakaocdn.net/kakaotalk_web/images/20211206_095349/ico_webchat.png) -20px -50px no-repeat;
     content: '';
 }
-
 ._wt_kakao_envoy ._wt_layer_tooltip p {
     color: #fff;
     opacity: 0.9;
 }
-
 ._wt_kakao_envoy ._wt_chat_on ._wt_view_webchat {
     display: block;
 }
-
 ._wt_kakao_envoy ._wt_chat_on ._wt_btn_open {
     display: none;
 }
-
 ._wt_kakao_envoy ._wt_chat_on ._wt_btn_close {
     display: block;
 }
-
 ._wt_kakao_envoy ._wt_chat_on ._wt_btn_logout {
     display: block;
 }
-
 ._wt_kakao_envoy ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close {
     padding-left: 0;
 }
-
 ._wt_kakao_envoy ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     width: auto;
     height: auto;
@@ -330,106 +286,85 @@
     background: 0 none;
     text-indent: 0;
 }
-
 ._wt_kakao_envoy ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_logout ._wt_txt_logout {
     width: 87px;
 }
-
 ._wt_kakao_envoy ._wt_chat_login ._wt_util_webchat ._wt_btn_logout:focus ._wt_txt_logout {
     width: 87px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_kakaotalk {
     width: 34px;
     height: 34px;
     background-position: 0 -130px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_ryan {
     width: 34px;
     height: 34px;
     background-position: -40px -130px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_apeach {
     width: 34px;
     height: 34px;
     background-position: -80px -130px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_muzi {
     width: 34px;
     height: 34px;
     background-position: -120px -130px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_con {
     width: 34px;
     height: 34px;
     background-position: -160px -130px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_ico_close {
     width: 12px;
     height: 12px;
     background-position: -80px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_view_webchat {
     bottom: 66px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_webchat {
     width: 46px;
     height: 46px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_open {
     padding: 6px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     width: 34px;
     height: 34px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_close {
     padding: 14px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_close ._wt_ico_close {
     margin: 3px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_logout {
     width: auto;
     padding: 14px 0;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     font-size: 13px;
     text-indent: 14px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout::after {
     top: 17px;
     height: 11px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_util_webchat ._wt_layer_tooltip {
     right: 33px;
     bottom: 33px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_emph_new {
     top: 9px;
     right: 5px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_layer_tooltip {
     padding: 6px 10px 4px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_layer_tooltip::after {
     right: 5px;
     bottom: -3px;
@@ -437,134 +372,108 @@
     height: 10px;
     background-position: -100px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_layer_tooltip p {
     line-height: 15px;
     font-size: 12px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_msg_on ._wt_emph_new {
     top: 4px;
     right: 0;
     width: 10px;
     height: 10px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_msg_on ._wt_emph_new::after {
     top: 2px;
     left: 2px;
     width: 6px;
     height: 6px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     font-size: 13px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_logout ._wt_txt_logout {
     width: 70px;
 }
-
 ._wt_kakao_envoy ._wt_view_small ._wt_chat_login ._wt_util_webchat ._wt_btn_logout:focus ._wt_txt_logout {
     width: 70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_kakaotalk {
     width: 58px;
     height: 58px;
     background-position: 0 -70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_ryan {
     width: 58px;
     height: 58px;
     background-position: -60px -70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_apeach {
     width: 58px;
     height: 58px;
     background-position: -120px -70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_muzi {
     width: 58px;
     height: 58px;
     background-position: -180px -70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_con {
     width: 58px;
     height: 58px;
     background-position: -240px -70px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_ico_close {
     width: 18px;
     height: 18px;
     background-position: -40px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_view_webchat {
     bottom: 98px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat {
     border-radius: 39px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_webchat {
     width: 78px;
     height: 78px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_open {
     padding: 10px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     width: 58px;
     height: 58px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_close {
     padding: 29px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_close ._wt_ico_close {
     margin: 1px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_logout {
     width: auto;
     padding: 29px 0;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     font-size: 17px;
     text-indent: 30px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout::after {
     top: 30px;
     height: 18px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_util_webchat ._wt_layer_tooltip {
     right: 57px;
     bottom: 57px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_emph_new {
     top: 13px;
     right: 8px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_layer_tooltip {
     padding: 10px 15px 8px;
     border-radius: 20px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_layer_tooltip::after {
     right: 8px;
     bottom: -5px;
@@ -572,104 +481,83 @@
     height: 16px;
     background-position: -60px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_layer_tooltip p {
     line-height: 19px;
     font-size: 16px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_msg_on ._wt_emph_new {
     top: 8px;
     right: 0;
     width: 16px;
     height: 16px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_msg_on ._wt_emph_new::after {
     top: 3px;
     left: 3px;
     width: 10px;
     height: 10px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     font-size: 17px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_logout ._wt_txt_logout {
     width: 107px;
 }
-
 ._wt_kakao_envoy ._wt_view_large ._wt_chat_login ._wt_util_webchat ._wt_btn_logout:focus ._wt_txt_logout {
     width: 107px;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_module_webchat {
     right: auto;
     left: 20px;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_view_webchat {
     right: auto;
     left: 0;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_util_webchat {
     right: auto;
     left: 0;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_util_webchat ._wt_emph_new {
     right: auto;
     left: 6px;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_util_webchat ._wt_layer_tooltip {
     right: auto;
     left: 44px;
     transform-origin: left bottom;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_layer_tooltip::after {
     right: auto;
     left: 7px;
     background-position: -140px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_left ._wt_msg_on ._wt_emph_new {
     left: 0;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_small ._wt_util_webchat ._wt_emph_new {
     left: 5px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_small ._wt_util_webchat ._wt_layer_tooltip {
     left: 33px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_small ._wt_layer_tooltip::after {
     left: 5px;
     background-position: -120px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_small ._wt_msg_on ._wt_emph_new {
     left: 0;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_large ._wt_util_webchat ._wt_emph_new {
     left: 8px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_large ._wt_util_webchat ._wt_layer_tooltip {
     left: 57px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_large ._wt_layer_tooltip::after {
     left: 7px;
     background-position: -160px -50px;
 }
-
 ._wt_kakao_envoy ._wt_view_left._wt_view_large ._wt_msg_on ._wt_emph_new {
     left: 0;
 }
@@ -678,45 +566,35 @@
 ._wt_kakao_envoy .os_windows ._wt_layer_tooltip {
     padding: 6px 12px;
 }
-
 ._wt_kakao_envoy .os_windows ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     margin-top: -2px;
     font-size: 14px;
 }
-
 ._wt_kakao_envoy .os_windows ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     margin-top: -2px;
     font-size: 14px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_small ._wt_layer_tooltip {
     padding: 5px 10px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_small ._wt_layer_tooltip p {
     font-size: 11px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_small ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     font-size: 13px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_small ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     font-size: 13px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_large ._wt_layer_tooltip {
     padding: 9px 15px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_large ._wt_layer_tooltip p {
     font-size: 15px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_large ._wt_util_webchat ._wt_btn_logout ._wt_txt_logout {
     font-size: 16px;
 }
-
 ._wt_kakao_envoy .os_windows._wt_view_large ._wt_chat_login ._wt_util_webchat:hover ._wt_btn_close ._wt_ico_close {
     font-size: 16px;
 }
@@ -727,81 +605,65 @@
     height: 34px;
     background-position: -40px -170px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile ._wt_module_webchat {
     right: 16px;
     bottom: 16px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile ._wt_util_webchat {
     border-radius: 25px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile ._wt_util_webchat ._wt_btn_webchat {
     width: 50px;
     height: 50px;
     outline: none;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile ._wt_util_webchat ._wt_btn_open {
     padding: 8px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     width: 34px;
     height: 34px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_small ._wt_ico_kakaotalk {
     width: 26px;
     height: 26px;
     background-position: 0 -170px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_small ._wt_util_webchat {
     border-radius: 19px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_small ._wt_util_webchat ._wt_btn_webchat {
     width: 38px;
     height: 38px;
     outline: none;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_small ._wt_util_webchat ._wt_btn_open {
     padding: 6px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_small ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     width: 26px;
     height: 26px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_large ._wt_ico_kakaotalk {
     width: 45px;
     height: 45px;
     background-position: -80px -170px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_large ._wt_util_webchat {
     border-radius: 33px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_large ._wt_util_webchat ._wt_btn_webchat {
     width: 65px;
     height: 65px;
     outline: none;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_large ._wt_util_webchat ._wt_btn_open {
     padding: 10px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_large ._wt_util_webchat ._wt_btn_open ._wt_ico_open {
     width: 45px;
     height: 45px;
 }
-
 ._wt_kakao_envoy ._wt_view_mobile._wt_view_left ._wt_module_webchat {
     right: auto;
     left: 16px;
@@ -818,12 +680,14 @@
 }
 
 /* retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.5dppx) {
     ._wt_kakao_envoy ._wt_ico_webchat {
         background-image: url(https://t1.kakaocdn.net/kakaotalk_web/images/20211206_095349/rtn/ico_webchat.png);
         background-size: 300px 220px;
     }
-
     ._wt_kakao_envoy ._wt_layer_tooltip::after {
         background-image: url(https://t1.kakaocdn.net/kakaotalk_web/images/20211206_095349/rtn/ico_webchat.png);
         background-size: 300px 220px;
@@ -1077,7 +941,7 @@ fieldset, img {
     left: 0;
     width: 478px;
     border: 1px solid #e8e8e8;
-    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
@@ -1485,7 +1349,7 @@ input, select, textarea, button {
     background-color: #fff;
     overflow-y: auto;
     border: 1px solid #919191;
-    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.1);
 }
 
 .info_question .list_select li .link_opt {

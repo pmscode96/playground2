@@ -3,7 +3,7 @@
 body, button, input, select, td, textarea, th {
     font-size: 14px;
     line-height: 1.5;
-    font-family: KakaoBig Regular, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, dotum, 돋움, sans-serif;
+    font-family: KakaoBig Regular,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,dotum,돋움,sans-serif;
     color: #444;
 }
 
@@ -139,7 +139,7 @@ dl, li, menu, ol, ul {
     margin: 0 11px;
     padding: 22px 14px;
     font-size: 16px;
-    font-family: KakaoBig Bold, sans-serif;
+    font-family: KakaoBig Bold,sans-serif;
     color: #444;
 }
 
@@ -147,7 +147,7 @@ dl, li, menu, ol, ul {
     position: relative;
 }
 
-.wrap_util {
+.wrap_util{
     position: relative;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ dl, li, menu, ol, ul {
     margin: 0;
 }
 
-.box_avatar_squircle {
+.box_avatar_squircle{
     display: block;
     position: relative;
     width: 24px;
@@ -209,7 +209,7 @@ dl, li, menu, ol, ul {
     background: url(//t1.kakaocdn.net/together_image/svg/ico_search.svg) 50%/contain no-repeat;
 }
 
-.slide_menu_button {
+.slide_menu_button{
     display: contents;
 }
 
@@ -250,7 +250,7 @@ dl, li, menu, ol, ul {
     filter: alpha(opacity=30);
 }
 
-.sidemenu {
+.sidemenu{
     z-index: 1001;
     background-color: #fff;
     overflow-y: auto;
@@ -266,7 +266,7 @@ dl, li, menu, ol, ul {
     border: 0;
 }
 
-.tit_sidemenu {
+.tit_sidemenu{
     overflow: hidden;
     position: absolute;
     width: 0;
@@ -275,11 +275,11 @@ dl, li, menu, ol, ul {
     text-indent: -9999px;
 }
 
-.wrap_my {
+.wrap_my{
     display: block;
 }
 
-.side_btn_profile {
+.side_btn_profile{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -288,7 +288,7 @@ dl, li, menu, ol, ul {
     margin: 0 0 20px;
 }
 
-.side_box_avatar_squircle {
+.side_box_avatar_squircle{
     display: block;
     position: relative;
     width: 40px;
@@ -296,7 +296,7 @@ dl, li, menu, ol, ul {
     flex-shrink: 0;
 }
 
-.side_box_avatar_squircle::after {
+.side_box_avatar_squircle::after{
     content: "";
     position: absolute;
     top: -.49%;
@@ -310,14 +310,14 @@ dl, li, menu, ol, ul {
     border-radius: 0;
 }
 
-.side_thumb_profile {
+.side_thumb_profile{
     display: inline-block;
     width: 100%;
     height: 100%;
     vertical-align: top;
 }
 
-.user_id {
+.user_id{
     overflow: hidden;
     padding-left: 12px;
     color: #202020;
@@ -329,7 +329,7 @@ dl, li, menu, ol, ul {
     white-space: nowrap;
 }
 
-.user_id_screen_out {
+.user_id_screen_out{
     overflow: hidden;
     position: absolute;
     width: 0;
@@ -338,7 +338,7 @@ dl, li, menu, ol, ul {
     text-indent: -9999px;
 }
 
-.my_util {
+.my_util{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -347,13 +347,13 @@ dl, li, menu, ol, ul {
     background-color: #f9f9f9;
 }
 
-.my_util li {
+.my_util li{
     width: 50%;
     flex-grow: 1;
     flex-shrink: 0;
 }
 
-.link_util {
+.link_util{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,11 +379,11 @@ dl, li, menu, ol, ul {
     background-image: url(//t1.kakaocdn.net/together_image/svg/ico_side_my.svg);
 }
 
-.my_util li + li {
+.my_util li+li {
     position: relative;
 }
 
-.my_util li + li:before {
+.my_util li+li:before {
     content: "";
     display: block;
     position: absolute;
@@ -399,7 +399,7 @@ dl, li, menu, ol, ul {
     background-image: url(//t1.kakaocdn.net/together_image/svg/ico_side_notice.svg);
 }
 
-.side_screen_out {
+.side_screen_out{
     overflow: hidden;
     position: absolute;
     width: 0;
@@ -408,7 +408,7 @@ dl, li, menu, ol, ul {
     text-indent: -9999px;
 }
 
-.list_sidemenu {
+.list_sidemenu{
     position: relative;
     background: #fff;
     display: flex;
@@ -420,11 +420,11 @@ dl, li, menu, ol, ul {
     border: 0;
 }
 
-.list_sidemenu > li {
+.list_sidemenu>li {
     width: 100%;
 }
 
-.list_sidemenu .ico_svg {
+.list_sidemenu .ico_svg{
     display: inline-flex;
     width: 20px;
     height: 20px;
@@ -434,7 +434,7 @@ dl, li, menu, ol, ul {
     background-size: contain;
 }
 
-.link_sidemenu {
+.link_sidemenu{
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -469,14 +469,14 @@ dl, li, menu, ol, ul {
     background-image: url(//t1.kakaocdn.net/together_image/svg/ico_side_campaign.svg);
 }
 
-.list_sidesub {
+.list_sidesub{
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0 0;
     margin: 0 -18px;
 }
 
-.list_sidesub > li {
+.list_sidesub>li {
     width: calc(50% - 36px);
     margin: 0 18px;
 }
@@ -627,7 +627,7 @@ dl, li, menu, ol, ul {
     margin: 46px auto 0;
 }
 
-.file_upload .img_thumb + .lab_photo .ico_photo {
+.file_upload .img_thumb+.lab_photo .ico_photo {
     margin-top: 76px;
     background-position: -200px -88px;
 }
@@ -648,7 +648,7 @@ dl, li, menu, ol, ul {
     left: 0;
     width: 170px;
     margin-top: 36px;
-    font-family: KakaoBig Bold, sans-serif;
+    font-family: KakaoBig Bold,sans-serif;
 }
 
 .list_write dt.screen_out {
@@ -794,6 +794,24 @@ dl, li, menu, ol, ul {
     padding-right: 4px;
 }
 
+.edit_school{
+    width: 100%;
+}
+
+.inp_comm{
+    cursor: pointer;
+}
+
+.school{
+    float: left;
+    width: 230px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
 .opt_comm {
     display: inline-block;
     overflow: hidden;
@@ -922,7 +940,7 @@ dl, li, menu, ol, ul {
     padding: 0 0 0 42px;
 }
 
-.choice_btn .inp_comm:checked + .lab_comm {
+.choice_btn .inp_comm:checked+.lab_comm {
     position: relative;
     z-index: 1;
     border-color: #dc287c;
@@ -983,12 +1001,234 @@ dl, li, menu, ol, ul {
     border-radius: 5px;
 }
 
+.ngdialog-content {
+    overflow: hidden;
+    position: absolute;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+}
 
-/* 메인 컨텐츠 끝*/
-.hide {
+.inner_together_layer {
+    background-color: #fff;
+}
+
+.inner_together_layer2 {
+    width: 392px;
+}
+
+.inner_together_layer .wrap_phone {
+    margin: 0 22px 20px;
+    padding-top: 28px;
+    background: url(//t1.kakaocdn.net/together_image/common/bg_line.png) repeat-x 0 0;
+}
+
+.inner_together_layer .write_phone {
+    margin: 0 22px 28px;
+    padding-top: 53px;
+    background: #fff;
+}
+
+.wrap_project .box_cont .list_write {
+    position: relative;
+    margin: 10px 0 26px;
+    font-size: 16px;
+}
+
+.wrap_profile .box_cont .list_write {
+    margin: 11px 50px 7px;
+}
+
+.inner_together_layer .wrap_phone .list_write {
+    margin: 0;
+}
+
+.inner_together_layer .wrap_phone dt {
+    position: static;
+    margin-top: 0;
+    padding-bottom: 22px;
+    font-size: 16px;
+    color: #626262;
+}
+
+.inner_together_layer .write_phone dt {
+    width: auto;
+    padding-bottom: 20px;
+    line-height: 28px;
+}
+
+.inner_together_layer .list_write dd {
+    position: relative;
+    padding: 0;
+}
+
+.inner_together_layer .wrap_phone .info_phone {
+    height: 44px;
+}
+
+.box_cont .list_write .info_phone {
+    min-height: 44px;
+}
+
+.inner_together_layer .wrap_phone .group_tf {
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+
+.list_write .info_phone .group_tf {
+    float: left;
+    width: 100px;
+}
+
+.inner_together_layer .wrap_phone .info_phone .group_tf {
+    width: 120px;
+}
+
+.list_write .info_phone .group_tf:first-child {
+    width: 112px;
+}
+
+.inner_together_layer .wrap_phone .info_phone .group_tf:first-child {
+    width: 60px;
+}
+
+.inner_together_layer .wrap_phone .list_write .tf_write {
+    width: 100%;
+}
+
+.list_write .dash_among, .list_write .tilde_among {
+    float: left;
+}
+
+.list_write .dash_among .inner_among {
+    display: block;
+    width: 12px;
+    height: 2px;
+    margin: 21px 9px 0;
+    background-color: #e0e0e0;
+}
+
+.inner_together_layer .wrap_phone .dash_among .inner_among {
+    width: 11px;
+    height: 2px;
+    margin: 20px 6px 0 7px;
+}
+
+.inner_together_layer .wrap_phone .btn_certify {
+    width: 100%;
+    height: 44px;
+    margin: 12px 0;
+    border: 1px solid #ea7eb0;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 44px;
+    color: #dc287c;
+    background-color: #fdf4f8;
+    box-sizing: border-box;
+}
+
+.inner_together_layer .wrap_phone .group_tf .txt_lab {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #cacaca;
+    cursor: text;
+}
+
+.inner_together_layer .wrap_btn {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.inner_together_layer .wrap_btn_type {
+    margin: 0 30px;
+}
+
+.inner_together_layer2 .wrap_btn_type {
+    overflow: hidden;
+}
+
+.inner_together_layer .write_phone+.wrap_btn_type {
+    margin: 0 22px;
+}
+
+.inner_together_layer .wrap_btn .btn_set {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 48px;
+    margin: 0 4px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 16px;
+    line-height: 49px;
+}
+
+.inner_together_layer .wrap_btn .btn_type1 {
+    background-color: #dc287c;
+}
+
+.inner_together_layer .wrap_btn_type .btn_set {
+    width: 100%;
+    margin: 0 0 12px;
+}
+
+.inner_together_layer2 .wrap_btn .btn_set {
+    text-align: center;
+}
+
+.inner_together_layer .wrap_btn_type .btn_set:last-child {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.inner_together_layer .layer_foot {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inner_together_layer .layer_foot .btn_close {
+    display: block;
+    overflow: hidden;
+}
+
+.inner_together_layer .layer_foot .ico_together {
+    width: 17px;
+    height: 17px;
+    margin: 22px;
+    background-position: -184px 0;
+}
+
+.modalOFF {
     display: none;
 }
 
+.modalON {
+    display: block;
+}
+
+.dimmed_layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    background-color: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+/* 메인 컨텐츠 끝*/
+.hide{
+    display: none;
+}
 /* 푸터 시작*/
 #dkFoot {
     position: relative;
@@ -1029,7 +1269,7 @@ dl, li, menu, ol, ul {
     letter-spacing: -.1px;
 }
 
-.desc_banner {
+.desc_banner{
     font-style: normal;
     word-wrap: break-word;
     letter-spacing: -.1px;
@@ -1118,7 +1358,7 @@ dl, li, menu, ol, ul {
     align-items: center;
 }
 
-.list_menu, .list_menu li {
+.list_menu , .list_menu li{
     display: flex;
     align-items: center;
 }
@@ -1212,6 +1452,6 @@ dl, li, menu, ol, ul {
     background-image: url(//t1.kakaocdn.net/together_image/svg/footer_instagram_gray80.svg);
 }
 
-.d_footer .area_info > .link_menu {
+.d_footer .area_info>.link_menu {
     display: none;
 }
