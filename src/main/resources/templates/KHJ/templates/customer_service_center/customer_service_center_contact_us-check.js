@@ -1,26 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // 모든 position: relative 또는 position: absolute 요소를 선택합니다.
-  const relativeOrAbsoluteElements = document.querySelectorAll(".relative, .absolute");
-
-  const itemCheckElement = document.querySelector(".item_check");
-
-  relativeOrAbsoluteElements.forEach(function(element) {
-    // 요소에 클릭 이벤트 리스너를 추가합니다.
-    element.addEventListener("click", function(event) {
-      // 이벤트 전파를 막음
-      event.stopPropagation();
-
-      itemCheckElement.addEventListener("click", function() {
-        if (itemCheckElement.classList.contains("checked")) {
-          itemCheckElement.classList.remove("checked");
-          console.log("있음");
-        } else {
-          itemCheckElement.classList.add("checked");
-          console.log("없음");
-        }
-      });
-
-      // 다른 클릭 이벤트 처리 코드를 작성할 수 있습니다.
+document.addEventListener("DOMContentLoaded", function () {
+  // 문서가 로드된 후 실행되는 함수
+  $(document).ready(function() {
+    // 체크박스 요소를 클릭했을 때 이벤트 처리
+    $("#agree").click(function() {
+      // 체크박스의 체크 상태를 확인
+      if ($(this).prop("checked")) {
+        // 체크된 경우, 'checked' 클래스 추가
+        $(".item_check").addClass("checked");
+        console.log("추가됨")
+      } else {
+        // 체크가 해제된 경우, 'checked' 클래스 제거
+        $(".item_check").removeClass("checked");
+        console.log("제거됨")
+      }
     });
   });
 });
