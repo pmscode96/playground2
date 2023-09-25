@@ -656,36 +656,29 @@ audio, canvas, embed, iframe, img, object, svg, video {
     border-right-width: 1px;
 }
 
-.absolute_top1{
-    display: none;
+.absolute_top1 {
     top: 42px;
     z-index: 10;
-    right: 0;
+    right: 0px;
+    position: absolute;
+}
+
+.absolute_top1{
+    display: none;
+}
+
+.absolute_top2 {
+    top: 42px;
+    z-index: 10;
+    right: 0px;
     position: absolute;
 }
 
 .absolute_top2{
-    top: 42px;
-    z-index: 10;
-    right: 0;
-    /*left: 0;*/
-    position: absolute;
+    display: none;
 }
 
-#csv{
-    /*border-color: #f3f3f4;*/
-    /*background-color: #f3f3f4;*/
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    color: #333334;
-    fill: #333334;
-    border-style: solid;
-    border-width: 1px;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    border-color: rgba(0,0,0,.1);
-    cursor: pointer;
-}
+
 
 
 /*#bottom_id1 #bottom_id2 .path1{*/
